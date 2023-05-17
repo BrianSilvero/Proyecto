@@ -1,0 +1,768 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,300;1,500&family=Signika+Negative:wght@300&family=Solway&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F7ECDE;
+}
+
+/* Menu de navegacion */
+header{
+    background-color: #000000;
+}
+
+.nav__header{
+display: flex;
+justify-content: space-between;
+}
+
+.logo{
+    min-width: 150px;
+    max-width: 100%;
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.log{
+    display: flex;
+    padding-left: 22px;
+}
+
+.nav-link{
+    color: #Ffffff;
+    font-family: 'Solway', serif;
+}
+nav-link:hover{
+    color: #54BAB9;
+    text-decoration: underline #54BAB9;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28, 999, 999, 1000.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+
+
+
+
+
+
+.ul__header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style-type: none;
+}
+
+
+nav ul li{
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px transparent;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+
+nav ul li a {
+    color: #FEFCF3;
+    font-size: 20px;
+    text-decoration: underline transparent;
+    font-family: 'Solway', serif;
+    margin: 10px;
+    transition: 0.01s;
+}
+
+nav ul li a:hover{
+    color: #54BAB9;
+    text-decoration: underline #54BAB9;
+}
+
+/* H1 */
+ h1{
+    width: 100%;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    background-color: #F7ECDE; 
+    font-family: 'Hammersmith One', sans-serif;
+    color: #191919;
+}
+
+/* Main */
+main{
+        width: 100%;
+        min-height: 100vh;
+        max-height: 100%;
+        padding-top: 140px;
+    }
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-top:5px double gray;    
+}
+
+.img__pechuga{
+    width: 980px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.pechuga_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: transparent;
+    transition: 0.4s;
+}
+.pechuga_link p{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #594545;
+    color: #594545;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.pechuga_link img:hover{
+    box-shadow: 0 0 10px #cfc4c4ad;
+}
+.pechuga_link p:hover{
+    box-shadow: 2px 2px 2px 0px ;
+    background-color: #cfc4c4ad;
+} 
+
+.bg{
+    display: inline-flex;
+    width: 100%;
+    background-image: url('../assets/chef.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment:local;
+    margin-top: 10px;
+    padding: 100px;
+    object-fit: cover;
+}
+
+.grid__cards{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+    grid-template-areas:
+    "area1 area2 area3"
+    "area1 area4 area5"
+}
+
+.area1{
+    display: flex;
+    align-items: center;
+    grid-area: area1;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.area1:hover{
+    box-shadow: 0 0 15px #a70101;
+}
+.grid__cards__lomo{
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 5px 5px 0px #191919;
+    border-radius: 5px;
+}
+.lomo_link{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+}
+.lomo_link h2{
+    margin: 10px;
+    font-size: 24px;
+    color: #FFF2CC;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.lomo_link p{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFF2CC;
+    font-weight: initial;
+    font-style: italic;
+}
+
+.area2{
+    display: flex;
+    grid-area: area2;
+    align-items: center;
+    background-color: #a70101f1;
+    height: 100%;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+    border-radius: 5px;
+}
+.area2:hover{
+    box-shadow: 0 0 10px #a70101;
+}
+.grid__cards__noquis{
+    align-self: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 0px #191919;
+    border-radius: 5px;
+}
+.noquis_link{
+    margin: 5px;
+    border: transparent;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+}
+.noquis_link h2{
+    margin: 5px;
+    color: #FFF2CC;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.noquis_link p{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFF2CC;
+    font-weight: initial;
+    font-style: italic;
+}
+
+.area3{
+    display: flex;
+    grid-area: area3;
+    align-items: center;
+    background-color: #a70101f1;
+    height: 100%;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+    border-radius: 5px;
+}
+.area3:hover{
+    box-shadow: 0 0 10px #a70101;
+}
+.grid__cards__sanguche{
+    align-self: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 0px #191919;
+    border-radius: 5px;
+}
+.sanguche_entraña_link{
+    margin: 5px;
+    border: transparent;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+}
+.sanguche_entraña_link h2{
+    margin: 5px;
+    color: #FFF2CC;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.sanguche_entraña_link p{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFF2CC;
+    font-weight: initial;
+    font-style: italic;
+}
+
+.area4{
+    display: flex;
+    grid-area: area4;
+    align-items: center;
+    background-color: #a70101f1;
+    height: 100%;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+    border-radius: 5px;
+}
+.area4:hover{
+    box-shadow: 0 0 10px #a70101;
+}
+.grid__cards__tita_casera{
+    align-self: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 0px #191919;
+    border-radius: 5px;
+}
+.tita_casera_link{
+    margin: 5px;
+    border: transparent;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+}
+.tita_casera_link h2{
+    margin: 5px;
+    color: #FFF2CC;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.tita_casera_link p{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFF2CC;
+    font-weight: initial;
+    font-style: italic;
+}
+
+.area5{
+    display: flex;
+    grid-area: area5;
+    align-items: center;
+    background-color: #a70101f1;
+    height: 100%;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+    border-radius: 5px;
+}
+.area5:hover{
+    box-shadow: 0 0 10px #a70101;
+}
+.grid__cards__empanadas{
+    align-self: center;
+    justify-content: center;
+    object-position: center;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 0px #191919;
+    border-radius: 5px;
+}
+.empanadas_link{
+    margin: 5px;
+    border: transparent;
+    padding: auto;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+}
+.empanadas_link h2{
+    margin: 5px;
+    color: #FFF2CC;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.empanadas_link p{
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #FFF2CC;
+    font-weight: initial;
+    font-style: italic;
+}
+
+/* Formulario */
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    background-color: #DFA67B;
+    width: auto;
+    padding: 20px 200px;
+    border-radius: 5px;
+}
+form h2 {
+    font-size: 24px;
+    text-align: center;
+    background-color: #FFD966;
+    font-family: 'Solway', serif;
+}
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+label{
+    font-size: 24px;
+    font-family: 'Solway', serif;
+    color: #040303;
+    margin-right: 5px;
+    font-style: italic;
+}
+.caja_email{
+    font-size: 24px;
+    font-family: 'Solway', serif;
+    font-weight: bold;
+}
+.sumbit{
+    font-size: 20px;
+    padding: 3px;
+    font-family: 'Solway', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* footer */
+footer{
+    background-color: #000000;
+    width: 100%;
+    margin-top: 10px;
+}
+.log__footer{
+    padding-left: 48px;
+}
+.logo_footer{
+    height: 95px;
+    width: 150px;
+    object-fit: cover;
+}
+.nav__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul__footer{
+    display: flex;
+    gap: 1px;
+    list-style-type: none;
+}
+
+/* Media queris */
+
+@media only screen and (max-width:1078px){
+    .img__pechuga{
+        width: 800px;
+    }
+    .grid__cards{
+        margin-top: 15px;
+        padding: 0px 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas:
+        "area1 area1"
+        "area2 area3"
+        "area4 area5"
+    }
+    .bg{
+        padding: 95px;
+    }
+
+}
+@media only screen and (max-width:1078px){
+    .pechuga_link p {
+        width: 820px;
+}
+}
+@media only screen and (max-width:950px){
+    .pechuga_link p {
+        width: 720px;
+    }
+    h1{
+    font-size: 60px;
+    }
+    main {
+    padding-top: 140px;
+    }
+}
+@media only screen and (max-width:885px){
+    main {
+        padding-top: 140px;
+    }
+}
+@media only screen and (max-width:880px){
+    .grid__cards {
+        grid-template-columns: 1fr;
+        padding: 0px 10px;
+        grid-row-gap: 17px;
+        grid-template-areas:
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5";
+    }
+    .grid__cards__lomo{
+        width: 350px;
+        height: 300px;
+    }
+    .grid__cards__noquis{
+        width: 350px;
+        height: 300px;
+    }
+    .grid__cards__sanguche{
+        width: 350px;
+        height: 300px;
+    }
+    .grid__cards__tita_casera{
+        width: 350px;
+        height: 300px;
+    }
+    .grid__cards__tita_casera{
+        width: 350px;
+        height: 300px;
+    }
+    .grid__cards__empanadas{
+        width: 350px;
+        height: 300px;
+    }
+    .formulario {
+        padding: 20px 100px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        }
+    .pechuga_link p {
+        width: 720px;
+    }
+    .bg{
+        padding: 90px;
+    }
+    h1{
+        font-size: 55px;
+    }
+}
+@media only screen and (max-width:820px){
+    .img__pechuga {
+        width: 750px;
+    }
+    .pechuga_link p {
+        width: 620px;
+    }
+    nav ul li a {
+        margin: 0px;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width:785px){
+    .img__pechuga {
+        width: 680px;
+    }
+    .pechuga_link p {
+    width: 620px;
+    }
+    nav ul li {
+        padding: 0px;
+    }
+    .ul__footer {
+        gap: 18px;
+        padding: 0px 10px;
+    }    
+    form h2 {
+        font-size: 20px;
+    }
+    label {
+        font-size: 20px;
+    }
+    .caja_email {
+        font-size: 20px;
+    }   
+    .bg{
+        padding: 85px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    main {
+        padding-top: 140px;
+    }    
+}
+@media only screen and (max-width:735px){
+    .log {
+        display: flex;
+        padding-left: 0px;
+    }
+    .ul__header {
+        gap: 5px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .pechuga_link p {
+        font-size: 20px;
+    }
+    form h2 {
+        font-size: 18px;
+    }
+    label {
+        font-size: 18px;
+    }
+    .caja_email {
+        font-size: 18px;
+    }
+    .sumbit {
+        font-size: 18px;
+    }
+    .bg{
+        padding: 80px;
+    }
+}
+@media only screen and (max-width:715px){
+    .logo {
+        width: 167px;
+    }
+    .img__pechuga {
+        width: 630px;
+    }
+    .pechuga_link p {
+    width: 590px;
+    }
+    form h2 {
+        font-size: 16px;
+    }
+    label {
+        font-size: 16px;
+    }
+    .caja_email {
+        font-size: 16px;
+    }
+    .sumbit {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:680px){  
+    .log {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .formulario {
+        padding: 15px 70px;
+    }
+    .pechuga_link p {
+        font-size: 18px;
+    }
+    .img__pechuga {
+        width: 580px;
+    }
+    .pechuga_link p {
+    width: 540px;
+    }
+    .bg{
+        padding: 75px;
+    }
+    .grid__cards__lomo {
+        width: 315px;
+        height: 279px;
+    }.lomo_link h2 {
+        font-size: 20px;
+    }
+    .grid__cards__noquis {
+        width: 315px;
+        height: 279px;
+    }.noquis_link h2 {
+        font-size: 20px;
+    }
+    .grid__cards__sanguche {
+        width: 315px;
+        height: 279px;
+    }.sanguche_entraña_link h2 {
+        font-size: 20px;
+    }
+    .grid__cards__tita_casera {
+        width: 315px;
+        height: 279px;
+    }.tita_casera_link h2 {
+        font-size: 20px;
+    }
+    .grid__cards__empanadas {
+        width: 315px;
+        height: 279px;
+    }.empanadas_link h2 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:620px){ 
+    h1 {
+        font-size: 35px;
+    } 
+    .img__pechuga {
+        width: 500px;
+    }
+    .img__pechuga {
+        width: 540px;
+    }
+    .pechuga_link p {
+    width: 500px;
+    }
+    .formulario {
+        padding: 15px 50px;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .formulario {
+    padding: 15px 20px;
+    }
+    .bg{
+        padding: 70px;
+    }
+}
+@media only screen and (max-width:580px){     
+    .img__pechuga {
+        width: 480px;
+    }
+    .pechuga_link p {
+        font-size: 16px;
+        width: 450px;
+    }
+    h1{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:540px){ 
+    .bg{
+        padding: 65px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:530px){
+    .bg{
+        padding: 45px;
+    }   
+}
