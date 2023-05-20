@@ -70,13 +70,12 @@ justify-content: space-between;
 .nav-item:hover{
     border-bottom: 1px solid #54BAB9;
 }
-.bi-list{
-    font-size: 24px;
-    color: white;
+.btn-close {
+    --bs-btn-close-focus-shadow: 0
+    
 }
-.bi-arrow-right{
-    font-size: 24px;
-    color: white;
+.offcanvas-header .btn-close {
+    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * 1.5);
 }
 /* H1 */
  h1{
