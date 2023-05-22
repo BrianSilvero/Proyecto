@@ -1496,6 +1496,10 @@ dl, ol, ul {
         margin-top: 10px;
         width: 100%;
     }
+    .hero__recetas{
+        width: auto;
+        padding: 0px 0px;
+    }
 }
 @media only screen and (max-width:780px){
     .navbar-expand-md .navbar-nav .nav-link {
