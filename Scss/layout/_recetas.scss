@@ -1,0 +1,352 @@
+/* RECTAS.HTML.STYLE */
+.main__recetas{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+}
+.hero__recetas{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    grid-template-rows: auto;
+    row-gap: 7px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+     " area1a "
+     " area2a "
+     " area3a "
+     " area4a "
+     " area5a "
+     " area6a "
+}
+.h1__recetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom:5px double gray;    
+
+}
+.area1a{
+    display: flex;
+    align-items: center;
+    grid-area: area1a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.pechuga__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__pechuga{
+    width: 50%;
+}
+.recetas__img__pechuga{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 344px;
+}
+.div__recetas__pechuga{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+}
+.div__recetas__pechuga h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+}
+.div__recetas__pechuga p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+
+.pechuga__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+
+.area2a{
+    display: flex;
+    grid-area: area2a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.lomo__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__lomo{
+    width: 50%;
+}
+.recetas__img__lomo{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 344px;
+}
+.div__recetas__lomo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+    }
+
+.div__recetas__lomo h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    }
+.div__recetas__lomo p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.lomo__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+.area3a{
+    display: flex;
+    grid-area: area3a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.noquis__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__noquis{
+    width: 50%;
+}
+.recetas__img__noquis{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 344px;
+}
+.div__recetas__noquis{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+}
+.div__recetas__noquis h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+}
+.div__recetas__noquis p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.noquis__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+
+.area4a{
+    display: flex;
+    grid-area: area4a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.sanguche__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__sanguche{
+    width: 50%;
+}
+.recetas__img__sanguche{
+    width: 500px;
+    height: 344px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.div__recetas__sanguche{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+    }
+
+.div__recetas__sanguche h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    }
+.div__recetas__sanguche p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.sanguche__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+
+.area5a{
+    display: flex;
+    grid-area: area5a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.tita__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__tita{
+    width: 50%;
+}
+.recetas__img__tita{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 344px;
+}
+.div__recetas__tita{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+    }
+
+.div__recetas__tita h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    }
+.div__recetas__tita p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.tita__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+
+.area6a{
+    display: flex;
+    grid-area: area6a;
+    width: 100%;
+    height: 100%;
+    background-color: #a70101f1;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px 0px #0000003f;
+}
+.empanadas__link__recetas{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.div__img__empanadas{
+    width: 50%;
+}
+.recetas__img__empanadas{
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 344px;
+}
+.div__recetas__empanadas{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10px;
+    }
+
+.div__recetas__empanadas h2{
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    }
+.div__recetas__empanadas p{
+    font-size: 24px;
+    text-align: start;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+}
+.empanadas__link__recetas:hover{
+        box-shadow: 0 0 10px #a70101;
+}
+
+
