@@ -868,6 +868,46 @@ dl, ol, ul {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 5px 10px 5px;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__img__ailu__tokman img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  border-radius: 8px;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman h2 {
+  align-self: center;
+  width: auto;
+  border-radius: 5px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  background-color: black;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman p {
+  font-size: 24px;
+  text-align: start;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+}
 .main__paginas__recomendadas .hero__paginas__recomendadas .area2b {
   display: flex;
   align-items: center;
