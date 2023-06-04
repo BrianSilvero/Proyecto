@@ -24,11 +24,6 @@ header {
   background-color: #000000;
 }
 
-.nav__header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .logo {
   min-width: 150px;
   max-width: 100%;
@@ -45,11 +40,6 @@ header {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: 0;
   margin-left: 0;
-}
-
-.log {
-  display: flex;
-  padding-left: 22px;
 }
 
 .navbar-toggler-icon {
@@ -135,50 +125,48 @@ dl, ol, ul {
   width: 200px;
 }
 
-/* H1 */
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 65px;
-  font-weight: bold;
-  background-color: #F7ECDE;
-  font-family: "Hammersmith One", sans-serif;
-  color: #191919;
-}
-
 /* Main */
-main {
+.main__index {
   width: 100%;
   min-height: 100vh;
   max-height: 100%;
   padding-top: 140px;
 }
-
-.hero {
+.main__index h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__index .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 0;
   padding-top: 10px;
-  border-top: 5px double gray;
 }
-
-.img__pechuga {
+.main__index .hero .pechuga_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.main__index .hero .pechuga_link .img__pechuga {
   width: 980px;
   object-fit: cover;
   margin-top: 20px;
   border-radius: 8px;
 }
-
-.pechuga_link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
+.main__index .hero .pechuga_link .img__pechuga:hover {
+  box-shadow: 0 0 10px rgba(207, 196, 196, 0.6784313725);
 }
-
-.pechuga_link p {
+.main__index .hero .pechuga_link p {
   padding: 10px;
-  justify-content: center;
   text-align: center;
   border: 2px solid #594545;
   color: #594545;
@@ -186,20 +174,13 @@ main {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
   transition: 0.4s;
 }
-
-.pechuga_link img:hover {
-  box-shadow: 0 0 10px rgba(207, 196, 196, 0.6784313725);
-}
-
-.pechuga_link p:hover {
-  box-shadow: 2px 2px 2px 0px;
+.main__index .hero .pechuga_link p:hover {
+  box-shadow: 2px 2px 2p0px;
   background-color: rgba(207, 196, 196, 0.6784313725);
 }
-
-.bg {
+.main__index .hero .bg {
   display: inline-flex;
   width: 100%;
   background-image: url("../assets/chef.jpg");
@@ -210,8 +191,7 @@ main {
   padding: 100px;
   object-fit: cover;
 }
-
-.grid__cards {
+.main__index .grid__cards {
   display: grid;
   align-items: center;
   width: 100%;
@@ -223,23 +203,27 @@ main {
   gap: 25px;
   grid-template-areas: "area1 area2 area3" "area1 area4 area5";
 }
-
-.area1 {
+.main__index .grid__cards .area1 {
   display: flex;
-  align-items: center;
-  grid-area: area1;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  grid-area: area1;
   height: 100%;
   background-color: rgba(167, 1, 1, 0.9450980392);
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.area1:hover {
+.main__index .grid__cards .area1:hover {
   box-shadow: 0 0 15px #a70101;
 }
-
-.grid__cards__lomo {
+.main__index .grid__cards .area1 .lomo_link {
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.main__index .grid__cards .area1 .lomo_link .grid__cards__lomo {
   width: 500px;
   height: 450px;
   object-fit: cover;
@@ -247,23 +231,14 @@ main {
   box-shadow: 0px 5px 5px 0px #191919;
   border-radius: 5px;
 }
-
-.lomo_link {
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: transparent;
-}
-
-.lomo_link h2 {
+.main__index .grid__cards .area1 .lomo_link h2 {
   margin: 10px;
   font-size: 24px;
   color: #FFF2CC;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.lomo_link p {
+.main__index .grid__cards .area1 .lomo_link p {
   font-family: "Roboto", sans-serif;
   color: #191919;
   padding: 5px;
@@ -272,22 +247,30 @@ main {
   font-weight: initial;
   font-style: italic;
 }
-
-.area2 {
+.main__index .grid__cards .area2 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: rgba(167, 1, 1, 0.9450980392);
   grid-area: area2;
-  align-items: center;
-  background-color: rgba(167, 1, 1, 0.9450980392);
   height: 100%;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
   border-radius: 5px;
 }
-
-.area2:hover {
+.main__index .grid__cards .area2:hover {
   box-shadow: 0 0 10px #a70101;
 }
-
-.grid__cards__noquis {
+.main__index .grid__cards .area2 .noquis_link {
+  margin: 5px;
+  border: transparent;
+  padding: auto;
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.main__index .grid__cards .area2 .noquis_link .grid__cards__noquis {
   align-self: center;
   justify-content: center;
   object-position: center;
@@ -298,25 +281,13 @@ main {
   box-shadow: 0px 5px 5px 0px #191919;
   border-radius: 5px;
 }
-
-.noquis_link {
-  margin: 5px;
-  border: transparent;
-  padding: auto;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: transparent;
-}
-
-.noquis_link h2 {
+.main__index .grid__cards .area2 .noquis_link h2 {
   margin: 5px;
   color: #FFF2CC;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.noquis_link p {
+.main__index .grid__cards .area2 .noquis_link p {
   font-family: "Roboto", sans-serif;
   color: #191919;
   padding: 5px;
@@ -325,22 +296,30 @@ main {
   font-weight: initial;
   font-style: italic;
 }
-
-.area3 {
+.main__index .grid__cards .area3 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: rgba(167, 1, 1, 0.9450980392);
   grid-area: area3;
-  align-items: center;
-  background-color: rgba(167, 1, 1, 0.9450980392);
   height: 100%;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
   border-radius: 5px;
 }
-
-.area3:hover {
+.main__index .grid__cards .area3:hover {
   box-shadow: 0 0 10px #a70101;
 }
-
-.grid__cards__sanguche {
+.main__index .grid__cards .area3 .sanguche_entraña_link {
+  margin: 5px;
+  border: transparent;
+  padding: auto;
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.main__index .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
   align-self: center;
   justify-content: center;
   object-position: center;
@@ -351,25 +330,13 @@ main {
   box-shadow: 0px 5px 5px 0px #191919;
   border-radius: 5px;
 }
-
-.sanguche_entraña_link {
-  margin: 5px;
-  border: transparent;
-  padding: auto;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: transparent;
-}
-
-.sanguche_entraña_link h2 {
+.main__index .grid__cards .area3 .sanguche_entraña_link h2 {
   margin: 5px;
   color: #FFF2CC;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.sanguche_entraña_link p {
+.main__index .grid__cards .area3 .sanguche_entraña_link p {
   font-family: "Roboto", sans-serif;
   color: #191919;
   padding: 5px;
@@ -378,22 +345,31 @@ main {
   font-weight: initial;
   font-style: italic;
 }
-
-.area4 {
+.main__index .grid__cards .area4 {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: rgba(167, 1, 1, 0.9450980392);
   grid-area: area4;
-  align-items: center;
-  background-color: rgba(167, 1, 1, 0.9450980392);
   height: 100%;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
   border-radius: 5px;
 }
-
-.area4:hover {
+.main__index .grid__cards .area4:hover {
   box-shadow: 0 0 10px #a70101;
 }
-
-.grid__cards__tita_casera {
+.main__index .grid__cards .area4 .tita_casera_link {
+  margin: 5px;
+  border: transparent;
+  padding: auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.main__index .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
   align-self: center;
   justify-content: center;
   object-position: center;
@@ -404,25 +380,13 @@ main {
   box-shadow: 0px 5px 5px 0px #191919;
   border-radius: 5px;
 }
-
-.tita_casera_link {
-  margin: 5px;
-  border: transparent;
-  padding: auto;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: transparent;
-}
-
-.tita_casera_link h2 {
+.main__index .grid__cards .area4 .tita_casera_link h2 {
   margin: 5px;
   color: #FFF2CC;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.tita_casera_link p {
+.main__index .grid__cards .area4 .tita_casera_link p {
   font-family: "Roboto", sans-serif;
   color: #191919;
   padding: 5px;
@@ -431,22 +395,31 @@ main {
   font-weight: initial;
   font-style: italic;
 }
-
-.area5 {
+.main__index .grid__cards .area5 {
   display: flex;
-  grid-area: area5;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  gap: 0;
   background-color: rgba(167, 1, 1, 0.9450980392);
+  grid-area: area5;
   height: 100%;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
   border-radius: 5px;
 }
-
-.area5:hover {
+.main__index .grid__cards .area5:hover {
   box-shadow: 0 0 10px #a70101;
 }
-
-.grid__cards__empanadas {
+.main__index .grid__cards .area5 .empanadas_link {
+  margin: 5px;
+  border: transparent;
+  padding: auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: transparent;
+}
+.main__index .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
   align-self: center;
   justify-content: center;
   object-position: center;
@@ -457,25 +430,13 @@ main {
   box-shadow: 0px 5px 5px 0px #191919;
   border-radius: 5px;
 }
-
-.empanadas_link {
-  margin: 5px;
-  border: transparent;
-  padding: auto;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: transparent;
-}
-
-.empanadas_link h2 {
+.main__index .grid__cards .area5 .empanadas_link h2 {
   margin: 5px;
   color: #FFF2CC;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.empanadas_link p {
+.main__index .grid__cards .area5 .empanadas_link p {
   font-family: "Roboto", sans-serif;
   color: #191919;
   padding: 5px;
@@ -484,9 +445,7 @@ main {
   font-weight: initial;
   font-style: italic;
 }
-
-/* Formulario */
-.formulario {
+.main__index .formulario {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
@@ -495,35 +454,31 @@ main {
   padding: 20px 200px;
   border-radius: 5px;
 }
-
-form h2 {
+.main__index .formulario form h2 {
   font-size: 24px;
   text-align: center;
   background-color: #FFD966;
   font-family: "Solway", serif;
+  font-weight: bold;
 }
-
-.inputs {
+.main__index .formulario form .inputs {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
-label {
+.main__index .formulario form .inputs label {
   font-size: 24px;
   font-family: "Solway", serif;
   color: #040303;
   margin-right: 5px;
   font-style: italic;
 }
-
-.caja_email {
+.main__index .formulario form .inputs .caja_email {
   font-size: 24px;
   font-family: "Solway", serif;
   font-weight: bold;
 }
-
-.sumbit {
+.main__index .formulario form .inputs .sumbit {
   font-size: 20px;
   padding: 3px;
   font-family: "Solway", serif;
@@ -534,12 +489,25 @@ label {
 /* RECTAS.HTML.STYLE */
 .main__recetas {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
 }
-
-.hero__recetas {
+.main__recetas h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__recetas .hero__recetas {
   display: grid;
   align-items: center;
   width: 100%;
@@ -551,17 +519,7 @@ label {
   grid-template-columns: auto;
   grid-template-areas: " area1a " " area2a " " area3a " " area4a " " area5a " " area6a ";
 }
-
-.h1__recetas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  text-align: center;
-  border-bottom: 5px double gray;
-}
-
-.area1a {
+.main__recetas .hero__recetas .area1a {
   display: flex;
   align-items: center;
   grid-area: area1a;
@@ -571,34 +529,31 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.pechuga__link__recetas {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
-  text-decoration: none;
 }
-
-.div__img__pechuga {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga {
   width: 50%;
 }
-
-.recetas__img__pechuga {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
   width: 500px;
   object-fit: cover;
   border-radius: 8px;
   height: 344px;
 }
-
-.div__recetas__pechuga {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__pechuga h2 {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -608,20 +563,14 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__pechuga p {
+.main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
   font-size: 24px;
   text-align: start;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.pechuga__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-
-.area2a {
+.main__recetas .hero__recetas .area2a {
   display: flex;
   grid-area: area2a;
   width: 100%;
@@ -630,34 +579,32 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.lomo__link__recetas {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
   text-decoration: none;
 }
-
-.div__img__lomo {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo {
   width: 50%;
 }
-
-.recetas__img__lomo {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
   width: 500px;
   object-fit: cover;
   border-radius: 8px;
   height: 344px;
 }
-
-.div__recetas__lomo {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__lomo h2 {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -667,20 +614,14 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__lomo p {
+.main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
   font-size: 24px;
   text-align: start;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.lomo__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-
-.area3a {
+.main__recetas .hero__recetas .area3a {
   display: flex;
   grid-area: area3a;
   width: 100%;
@@ -689,34 +630,31 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.noquis__link__recetas {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
-  text-decoration: none;
 }
-
-.div__img__noquis {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis {
   width: 50%;
 }
-
-.recetas__img__noquis {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
   width: 500px;
   object-fit: cover;
   border-radius: 8px;
   height: 344px;
 }
-
-.div__recetas__noquis {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__noquis h2 {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -726,20 +664,14 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__noquis p {
+.main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
   font-size: 24px;
   text-align: start;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.noquis__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-
-.area4a {
+.main__recetas .hero__recetas .area4a {
   display: flex;
   grid-area: area4a;
   width: 100%;
@@ -748,34 +680,32 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.sanguche__link__recetas {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
   text-decoration: none;
 }
-
-.div__img__sanguche {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche {
   width: 50%;
 }
-
-.recetas__img__sanguche {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
   width: 500px;
-  height: 344px;
   object-fit: cover;
   border-radius: 8px;
+  height: 344px;
 }
-
-.div__recetas__sanguche {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__sanguche h2 {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -785,20 +715,14 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__sanguche p {
+.main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
   font-size: 24px;
   text-align: start;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.sanguche__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-
-.area5a {
+.main__recetas .hero__recetas .area5a {
   display: flex;
   grid-area: area5a;
   width: 100%;
@@ -807,34 +731,32 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.tita__link__recetas {
+.main__recetas .hero__recetas .area5a .tita__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
   text-decoration: none;
 }
-
-.div__img__tita {
+.main__recetas .hero__recetas .area5a .tita__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita {
   width: 50%;
 }
-
-.recetas__img__tita {
+.main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
   width: 500px;
   object-fit: cover;
   border-radius: 8px;
   height: 344px;
 }
-
-.div__recetas__tita {
+.main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__tita h2 {
+.main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -844,20 +766,14 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__tita p {
+.main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
   font-size: 24px;
   text-align: start;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
-
-.tita__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-
-.area6a {
+.main__recetas .hero__recetas .area6a {
   display: flex;
   grid-area: area6a;
   width: 100%;
@@ -866,34 +782,32 @@ label {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
-.empanadas__link__recetas {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas {
   display: flex;
   padding: 15px;
   align-items: center;
   border-radius: 8px;
   text-decoration: none;
 }
-
-.div__img__empanadas {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas {
   width: 50%;
 }
-
-.recetas__img__empanadas {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
   width: 500px;
   object-fit: cover;
   border-radius: 8px;
   height: 344px;
 }
-
-.div__recetas__empanadas {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas {
   display: flex;
   flex-direction: column;
   width: 50%;
   padding-left: 10px;
 }
-
-.div__recetas__empanadas h2 {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -903,8 +817,7 @@ label {
   font-family: "Playfair Display", serif;
   background-color: black;
 }
-
-.div__recetas__empanadas p {
+.main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
   font-size: 24px;
   text-align: start;
   color: white;
@@ -912,100 +825,170 @@ label {
   font-weight: bold;
 }
 
-.empanadas__link__recetas:hover {
-  box-shadow: 0 0 10px #a70101;
+.main__paginas__recomendadas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+}
+.main__paginas__recomendadas h1 {
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+  grid-template-rows: auto;
+  row-gap: 7px;
+  grid-template-columns: auto;
+  grid-template-areas: " area1b " " area2b " " area3b " " area4b ";
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
+  display: flex;
+  align-items: center;
+  grid-area: area1b;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 1, 1, 0.9450980392);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area2b {
+  display: flex;
+  align-items: center;
+  grid-area: area2b;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 1, 1, 0.9450980392);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area3b {
+  display: flex;
+  align-items: center;
+  grid-area: area3b;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 1, 1, 0.9450980392);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
+}
+.main__paginas__recomendadas .hero__paginas__recomendadas .area4b {
+  display: flex;
+  align-items: center;
+  grid-area: area4b;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 1, 1, 0.9450980392);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
 
 /* Media queris */
 @media only screen and (max-width: 1100px) {
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 30px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 30px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 30px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 30px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 30px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 30px;
   }
-  .div__recetas__pechuga p {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
     font-size: 20px;
   }
-  .div__recetas__lomo p {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
     font-size: 20px;
   }
-  .div__recetas__noquis p {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
     font-size: 20px;
   }
-  .div__recetas__sanguche p {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
     font-size: 20px;
   }
-  .div__recetas__tita p {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
     font-size: 20px;
   }
-  .div__recetas__empanadas p {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
     font-size: 20px;
   }
-  .div__recetas__pechuga p {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
     font-size: 20px;
   }
-  .div__recetas__lomo p {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
     font-size: 20px;
   }
-  .div__recetas__noquis p {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
     font-size: 20px;
   }
-  .div__recetas__sanguche p {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
     font-size: 20px;
   }
-  .div__recetas__tita p {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
     font-size: 20px;
   }
-  .div__recetas__empanadas p {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
     font-size: 20px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 490px;
     height: 334px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 490px;
     height: 334px;
   }
 }
 @media only screen and (max-width: 1078px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 800px;
   }
-  .grid__cards {
+  main .grid__cards {
     margin-top: 15px;
     padding: 0px 10px;
     grid-template-columns: 1fr 1fr;
@@ -1013,161 +996,161 @@ label {
     gap: 10px;
     grid-template-areas: "area1 area1" "area2 area3" "area4 area5";
   }
-  .bg {
+  main .hero .bg {
     padding: 95px;
   }
 }
 @media only screen and (max-width: 1078px) {
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 820px;
   }
 }
 @media only screen and (max-width: 1064px) {
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 28px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 28px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 28px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 28px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 28px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 28px;
   }
-  .div__recetas__pechuga p {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
     font-size: 18px;
   }
-  .div__recetas__lomo p {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
     font-size: 18px;
   }
-  .div__recetas__noquis p {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
     font-size: 18px;
   }
-  .div__recetas__sanguche p {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
     font-size: 18px;
   }
-  .div__recetas__tita p {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
     font-size: 18px;
   }
-  .div__recetas__empanadas p {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
     font-size: 18px;
   }
-  .div__recetas__pechuga p {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
     font-size: 18px;
   }
-  .div__recetas__lomo p {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
     font-size: 18px;
   }
-  .div__recetas__noquis p {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
     font-size: 18px;
   }
-  .div__recetas__sanguche p {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
     font-size: 18px;
   }
-  .div__recetas__tita p {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
     font-size: 18px;
   }
-  .div__recetas__empanadas p {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
     font-size: 18px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 480px;
     height: 324px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 480px;
     height: 324px;
   }
 }
 @media only screen and (max-width: 1050px) {
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 26px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 26px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 26px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 26px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 26px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 26px;
   }
-  .div__recetas__pechuga p {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga p {
     font-size: 16px;
   }
-  .div__recetas__lomo p {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo p {
     font-size: 16px;
   }
-  .div__recetas__noquis p {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis p {
     font-size: 16px;
   }
-  .div__recetas__sanguche p {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche p {
     font-size: 16px;
   }
-  .div__recetas__tita p {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita p {
     font-size: 16px;
   }
-  .div__recetas__empanadas p {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas p {
     font-size: 16px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 440px;
     height: 314px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 440px;
     height: 314px;
   }
@@ -1176,58 +1159,58 @@ label {
   .navbar-nav li a {
     font-size: 18px;
   }
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 24px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 24px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 24px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 24px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 24px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 24px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 400px;
     height: 304px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 400px;
     height: 304px;
   }
 }
 @media only screen and (max-width: 950px) {
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 720px;
   }
-  h1 {
+  main h1 {
     font-size: 60px;
   }
   main {
@@ -1246,94 +1229,90 @@ label {
   }
 }
 @media only screen and (max-width: 880px) {
-  .grid__cards {
+  main .grid__cards {
     grid-template-columns: 1fr;
     padding: 0px 10px;
     grid-row-gap: 17px;
     grid-template-areas: "area1" "area2" "area3" "area4" "area5";
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 350px;
     height: 300px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 350px;
     height: 300px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 350px;
     height: 300px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 350px;
     height: 300px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 350px;
     height: 300px;
   }
-  .grid__cards__empanadas {
-    width: 350px;
-    height: 300px;
-  }
-  .formulario {
+  main .formulario {
     padding: 20px 100px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 720px;
   }
-  .bg {
+  main .hero .bg {
     padding: 90px;
   }
-  h1 {
+  main h1 {
     font-size: 55px;
   }
   .navbar-nav li a {
     font-size: 16px;
   }
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 22px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 22px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 22px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 22px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 22px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 22px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 380px;
     height: 294px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 380px;
     height: 294px;
   }
@@ -1345,64 +1324,64 @@ label {
   .nav-item {
     padding: 0px 3px;
   }
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 20px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 20px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 20px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 20px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 20px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 20px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 360px;
     height: 274px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 360px;
     height: 274px;
   }
 }
 @media only screen and (max-width: 835px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 750px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 620px;
   }
   nav ul li a {
     margin: 0px;
   }
-  h1 {
+  main h1 {
     font-size: 45px;
   }
 }
@@ -1410,58 +1389,58 @@ label {
   .nav-item {
     padding: 0px 1px;
   }
-  .div__recetas__pechuga h2 {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
     font-size: 18px;
   }
-  .div__recetas__lomo h2 {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__recetas__lomo h2 {
     font-size: 18px;
   }
-  .div__recetas__noquis h2 {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis h2 {
     font-size: 18px;
   }
-  .div__recetas__sanguche h2 {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche h2 {
     font-size: 18px;
   }
-  .div__recetas__tita h2 {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita h2 {
     font-size: 18px;
   }
-  .div__recetas__empanadas h2 {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas h2 {
     font-size: 18px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga .recetas__img__pechuga {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__lomo {
+  .main__recetas .hero__recetas .area2a .lomo__link__recetas .div__img__lomo .recetas__img__lomo {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis .recetas__img__noquis {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche .recetas__img__sanguche {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita .recetas__img__tita {
     width: 340px;
     height: 254px;
   }
-  .recetas__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas .recetas__img__empanadas {
     width: 340px;
     height: 254px;
   }
 }
 @media only screen and (max-width: 790px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 680px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 620px;
   }
   nav ul li {
@@ -1471,19 +1450,19 @@ label {
     gap: 18px;
     padding: 0px 10px;
   }
-  form h2 {
+  main .formulario form h2 {
     font-size: 20px;
   }
-  label {
+  main .formulario form .inputs label {
     font-size: 20px;
   }
-  .caja_email {
+  main .formulario form .inputs .caja_email {
     font-size: 20px;
   }
-  .bg {
+  main .hero .bg {
     padding: 85px;
   }
-  h1 {
+  main h1 {
     font-size: 45px;
   }
   main {
@@ -1492,11 +1471,11 @@ label {
   .nav-item {
     padding: 0px 0px;
   }
-  .pechuga__link__recetas {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__pechuga {
+  .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__img__pechuga {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1506,11 +1485,11 @@ label {
     width: 100%;
   }
   /* asdsadsadsadsa */
-  .lomo__link__recetas {
+  .main__recetas .hero__recetas .lomo__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__lomo {
+  .main__recetas .hero__recetas .lomo__link__recetas .div__img__lomo {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1519,59 +1498,59 @@ label {
     margin-top: 10px;
     width: 100%;
   }
-  .noquis__link__recetas {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__img__noquis {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .div__recetas__noquis {
+  .main__recetas .hero__recetas .area3a .noquis__link__recetas .div__recetas__noquis {
     margin-top: 10px;
     width: 100%;
   }
-  .sanguche__link__recetas {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__img__sanguche {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .div__recetas__sanguche {
+  .main__recetas .hero__recetas .area4a .sanguche__link__recetas .div__recetas__sanguche {
     margin-top: 10px;
     width: 100%;
   }
-  .tita__link__recetas {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__img__tita {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .div__recetas__tita {
+  .main__recetas .hero__recetas .area5a .tita__link__recetas .div__recetas__tita {
     margin-top: 10px;
     width: 100%;
   }
-  .empanadas__link__recetas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas {
     display: flex;
     flex-direction: column;
   }
-  .div__img__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__img__empanadas {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .div__recetas__empanadas {
+  .main__recetas .hero__recetas .area6a .empanadas__link__recetas .div__recetas__empanadas {
     margin-top: 10px;
     width: 100%;
   }
-  .hero__recetas {
+  .main__recetas .hero__recetas {
     width: auto;
     padding: 0px 0px;
   }
@@ -1596,25 +1575,25 @@ label {
     display: flex;
     padding-left: 0px;
   }
-  h1 {
+  main h1 {
     font-size: 40px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     font-size: 20px;
   }
-  form h2 {
+  main .formulario form h2 {
     font-size: 18px;
   }
-  label {
+  main .formulario form .inputs label {
     font-size: 18px;
   }
-  .caja_email {
+  main .formulario form .inputs .caja_email {
     font-size: 18px;
   }
-  .sumbit {
+  main .formulario form .inputs .sumbit {
     font-size: 18px;
   }
-  .bg {
+  main .hero .bg {
     padding: 80px;
   }
 }
@@ -1622,22 +1601,23 @@ label {
   .logo {
     width: 167px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 630px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 590px;
   }
-  form h2 {
+  main .formulario form h2 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  main .formulario form .inputs label {
     font-size: 16px;
   }
-  label {
+  main .formulario form .inputs .caja_email {
     font-size: 16px;
   }
-  .caja_email {
-    font-size: 16px;
-  }
-  .sumbit {
+  main .formulario form .inputs .sumbit {
     font-size: 16px;
   }
 }
@@ -1647,91 +1627,91 @@ label {
     justify-content: center;
     padding-left: 0;
   }
-  .formulario {
+  main .formulario {
     padding: 15px 70px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     font-size: 18px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 580px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 540px;
   }
-  .bg {
+  main .hero .bg {
     padding: 75px;
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 315px;
     height: 279px;
   }
-  .lomo_link h2 {
+  main .grid__cards .area1 .lomo_link h2 {
     font-size: 20px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 315px;
     height: 279px;
   }
-  .noquis_link h2 {
+  main .grid__cards .area2 .noquis_link h2 {
     font-size: 20px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 315px;
     height: 279px;
   }
   .sanguche_entraña_link h2 {
     font-size: 20px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 315px;
     height: 279px;
   }
-  .tita_casera_link h2 {
+  main .grid__cards .area4 .tita_casera_link h2 {
     font-size: 20px;
   }
-  .grid__cards__empanadas {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 315px;
     height: 279px;
   }
-  .empanadas_link h2 {
+  main .grid__cards .area5 .empanadas_link h2 {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 620px) {
-  h1 {
+  main h1 {
     font-size: 35px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 500px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 540px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 500px;
   }
-  .formulario {
+  main .formulario {
     padding: 15px 50px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .formulario {
+  main .formulario {
     padding: 15px 20px;
   }
-  .bg {
+  main .hero .bg {
     padding: 70px;
   }
 }
 @media only screen and (max-width: 580px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 480px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     font-size: 16px;
     width: 450px;
   }
-  h1 {
+  main h1 {
     font-size: 35px;
   }
 }
@@ -1748,10 +1728,10 @@ label {
   }
 }
 @media only screen and (max-width: 540px) {
-  .bg {
+  main .hero .bg {
     padding: 65px;
   }
-  h1 {
+  main h1 {
     font-size: 30px;
   }
 }
@@ -1761,36 +1741,36 @@ label {
   }
 }
 @media only screen and (max-width: 530px) {
-  .bg {
+  main .hero .bg {
     padding: 45px;
   }
 }
 @media only screen and (max-width: 500px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 470px;
   }
 }
 @media only screen and (max-width: 487px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 460px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 430px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 450px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 430px;
   }
 }
 @media only screen and (max-width: 467px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 440px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 420px;
   }
 }
@@ -1798,10 +1778,10 @@ label {
   .navbar {
     padding: 0;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 420px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 400px;
   }
 }
@@ -1822,10 +1802,10 @@ label {
   }
 }
 @media only screen and (max-width: 490px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 410px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 390px;
   }
 }
@@ -1838,112 +1818,109 @@ label {
   .col-md-2 {
     width: 179px;
   }
-  h1 {
+  main h1 {
     font-size: 28px;
   }
 }
 @media only screen and (max-width: 432px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 400px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 380px;
   }
-  h1 {
+  main h1 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 421px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 390px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 370px;
   }
 }
 @media only screen and (max-width: 411px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 380px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 360px;
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 300px;
     height: 259px;
   }
-  .lomo_link h2 {
+  main .grid__cards .area1 .lomo_link h2 {
     font-size: 18px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 300px;
     height: 259px;
   }
-  .noquis_link h2 {
+  main .grid__cards .area2 .noquis_link h2 {
     font-size: 18px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 300px;
     height: 259px;
   }
   .sanguche_entraña_link h2 {
     font-size: 18px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 300px;
     height: 259px;
   }
-  .tita_casera_link h2 {
-    font-size: 20px;
-  }
-  .grid__cards__empanadas {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 300px;
     height: 259px;
   }
-  .empanadas_link h2 {
+  main .grid__cards .area5 .empanadas_link h2 {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 370px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 350px;
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 290px;
     height: 249px;
   }
-  .lomo_link h2 {
+  main .grid__cards .area1 .lomo_link h2 {
     font-size: 18px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 290px;
     height: 249px;
   }
-  .noquis_link h2 {
+  main .grid__cards .area2 .noquis_link h2 {
     font-size: 18px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 290px;
     height: 249px;
   }
   .sanguche_entraña_link h2 {
     font-size: 18px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 290px;
     height: 249px;
   }
-  .tita_casera_link h2 {
+  main .grid__cards .area4 .tita_casera_link h2 {
     font-size: 18px;
   }
-  .grid__cards__empanadas {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 290px;
     height: 249px;
   }
-  .empanadas_link h2 {
+  main .grid__cards .area5 .empanadas_link h2 {
     font-size: 18px;
   }
 }
@@ -1953,33 +1930,33 @@ label {
   }
 }
 @media only screen and (max-width: 390px) {
-  h1 {
+  main h1 {
     font-size: 25px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 360px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 340px;
     font-size: 13px;
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 280px;
     height: 239px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 280px;
     height: 239px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 280px;
     height: 239px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 280px;
     height: 239px;
   }
-  .grid__cards__empanadas {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 280px;
     height: 239px;
   }
@@ -1988,73 +1965,73 @@ label {
   }
 }
 @media only screen and (max-width: 388px) {
-  h1 {
+  main h1 {
     font-size: 23px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 340px;
   }
-  .formulario {
+  main .formulario {
     padding: 15px 10px;
   }
-  label {
+  main .formulario form .inputs label {
     font-size: 13px;
   }
-  .caja_email {
+  main .formulario form .inputs .caja_email {
     font-size: 13px;
   }
-  .sumbit {
+  main .formulario form .inputs .sumbit {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 387px) {
-  h1 {
+  main h1 {
     font-size: 20px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 330px;
   }
-  .formulario {
+  main .formulario {
     padding: 15px 8px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 318px;
   }
 }
 @media only screen and (max-width: 360px) {
-  h1 {
+  main h1 {
     font-size: 20px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 330px;
     object-fit: cover;
   }
-  .formulario {
+  main .formulario {
     padding: 15px 8px;
   }
-  .img__pechuga {
+  main .hero .pechuga_link .img__pechuga {
     width: 360px;
   }
-  .pechuga_link p {
+  main .hero .pechuga_link p {
     width: 316px;
   }
-  .grid__cards__lomo {
+  main .grid__cards .area1 .lomo_link .grid__cards__lomo {
     width: 270px;
     height: 229px;
   }
-  .grid__cards__noquis {
+  main .grid__cards .area2 .noquis_link .grid__cards__noquis {
     width: 270px;
     height: 229px;
   }
-  .grid__cards__sanguche {
+  main .grid__cards .area3 .sanguche_entraña_link .grid__cards__sanguche {
     width: 270px;
     height: 229px;
   }
-  .grid__cards__tita_casera {
+  main .grid__cards .area4 .tita_casera_link .grid__cards__tita_casera {
     width: 270px;
     height: 229px;
   }
-  .grid__cards__empanadas {
+  main .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 270px;
     height: 229px;
   }
