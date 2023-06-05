@@ -83,6 +83,9 @@
     width: 490px;
     height: 334px;
   }
+  .parrafo_card {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 1078px) {
   .main__index .hero .pechuga_link .img__pechuga {
@@ -99,10 +102,14 @@
   .main__index .hero .bg {
     padding: 95px;
   }
-}
-@media only screen and (max-width: 1078px) {
   .main__index .hero .pechuga_link p {
     width: 820px;
+  }
+  .parrafo_card {
+    font-size: 22px;
+  }
+  .parrafo_card {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 1064px) {
@@ -254,6 +261,12 @@
     width: 440px;
     height: 314px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 55px;
+  }
+  .parrafo_card {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 974px) {
   .navbar-nav li a {
@@ -305,6 +318,9 @@
     width: 400px;
     height: 304px;
   }
+  .parrafo_card {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 950px) {
   .main__index .hero .pechuga_link p {
@@ -319,6 +335,9 @@
   .navbar-nav li a {
     font-size: 17px;
   }
+  .parrafo_card {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 885px) {
   .main__index {
@@ -326,6 +345,9 @@
   }
   .navbar-nav li a {
     font-size: 16px;
+  }
+  .main__paginas__recomendadas h1 {
+    font-size: 45px;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -661,12 +683,25 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  .offcanvas,
+  .offcanvas-lg,
+  .offcanvas-md,
+  .offcanvas-sm,
+  .offcanvas-xl,
+  .offcanvas-xxl {
     --bs-offcanvas-transition: transform 0s ease-in-out;
+  }
+  .link {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 760px) {
-  .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  .offcanvas,
+  .offcanvas-lg,
+  .offcanvas-md,
+  .offcanvas-sm,
+  .offcanvas-xl,
+  .offcanvas-xxl {
     --bs-offcanvas-transition: transform 0.4s ease-in-out;
   }
 }
@@ -695,6 +730,9 @@
   }
   .main__index .hero .bg {
     padding: 80px;
+  }
+  .main__paginas__recomendadas h1 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 715px) {
@@ -777,6 +815,9 @@
   .main__index .grid__cards .area5 .empanadas_link h2 {
     font-size: 20px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 620px) {
   .main__index h1 {
@@ -814,6 +855,9 @@
   .main__index h1 {
     font-size: 35px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 571px) {
   .h2__footer {
@@ -850,6 +894,14 @@
     width: 470px;
   }
 }
+@media only screen and (max-width: 490px) {
+  .main__index .hero .pechuga_link .img__pechuga {
+    width: 410px;
+  }
+  .main__index .hero .pechuga_link p {
+    width: 390px;
+  }
+}
 @media only screen and (max-width: 487px) {
   .main__index .hero .pechuga_link .img__pechuga {
     width: 460px;
@@ -865,6 +917,14 @@
   .main__index .hero .pechuga_link p {
     width: 430px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 477px) {
+  .offcanvas {
+    max-width: 69%;
+  }
 }
 @media only screen and (max-width: 467px) {
   .main__index .hero .pechuga_link .img__pechuga {
@@ -879,10 +939,18 @@
     padding: 0;
   }
   .main__index .hero .pechuga_link .img__pechuga {
-    width: 420px;
+    width: 400px;
   }
   .main__index .hero .pechuga_link p {
     width: 400px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .col-md-2 {
+    width: 179px;
+  }
+  .main__index h1 {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -899,27 +967,6 @@
   }
   .nav__footer {
     padding-right: 16px;
-  }
-}
-@media only screen and (max-width: 490px) {
-  .main__index .hero .pechuga_link .img__pechuga {
-    width: 410px;
-  }
-  .main__index .hero .pechuga_link p {
-    width: 390px;
-  }
-}
-@media only screen and (max-width: 477px) {
-  .offcanvas {
-    max-width: 69%;
-  }
-}
-@media only screen and (max-width: 455px) {
-  .col-md-2 {
-    width: 179px;
-  }
-  .main__index h1 {
-    font-size: 28px;
   }
 }
 @media only screen and (max-width: 432px) {

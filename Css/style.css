@@ -32,7 +32,13 @@ header {
   object-fit: cover;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
   width: 100%;
@@ -73,7 +79,7 @@ header {
 }
 
 .btn-close {
-  --bs-btn-close-focus-shadow: 0 ;
+  --bs-btn-close-focus-shadow: 0;
 }
 
 .offcanvas-header .btn-close {
@@ -116,13 +122,70 @@ footer {
   padding-right: 10px;
 }
 
-dl, ol, ul {
+dl,
+ol,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .col-md-2 {
   width: 200px;
+}
+
+.card_paginas_recomendas, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(167, 1, 1, 0.9450980392);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
+}
+.card_paginas_recomendas:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b:hover {
+  box-shadow: 0 0 10px #a70101;
+}
+
+.link, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 5px 10px 5px;
+}
+
+.i_m_g, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__img__4 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__img__3 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__img__2 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__img__1 img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.div__description, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.titulo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 h2 {
+  align-self: center;
+  width: auto;
+  border-radius: 5px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  background-color: black;
+}
+
+.parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p {
+  font-size: 24px;
+  text-align: start;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
 }
 
 /* Main */
@@ -859,86 +922,17 @@ dl, ol, ul {
   grid-template-areas: " area1b " " area2b " " area3b " " area4b ";
 }
 .main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
-  display: flex;
-  align-items: center;
   grid-area: area1b;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(167, 1, 1, 0.9450980392);
-  border-radius: 10px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 5px 10px 5px;
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__img__ailu__tokman img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  align-items: center;
-  border-radius: 8px;
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman:hover {
-  box-shadow: 0 0 10px #a70101;
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman h2 {
-  align-self: center;
-  width: auto;
-  border-radius: 5px;
-  font-size: 35px;
-  text-align: center;
-  color: white;
-  font-family: "Signika Negative", sans-serif;
-  background-color: black;
-}
-.main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__ailu__tokman p {
-  font-size: 24px;
-  text-align: start;
-  color: white;
-  font-family: "Signika Negative", sans-serif;
-  font-weight: bold;
 }
 .main__paginas__recomendadas .hero__paginas__recomendadas .area2b {
-  display: flex;
-  align-items: center;
   grid-area: area2b;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(167, 1, 1, 0.9450980392);
-  border-radius: 10px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
 .main__paginas__recomendadas .hero__paginas__recomendadas .area3b {
-  display: flex;
-  align-items: center;
   grid-area: area3b;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(167, 1, 1, 0.9450980392);
-  border-radius: 10px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
 .main__paginas__recomendadas .hero__paginas__recomendadas .area4b {
-  display: flex;
-  align-items: center;
   grid-area: area4b;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(167, 1, 1, 0.9450980392);
-  border-radius: 10px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-
 /* Media queris */
 @media only screen and (max-width: 1100px) {
   .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
@@ -1023,6 +1017,9 @@ dl, ol, ul {
     width: 490px;
     height: 334px;
   }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 1078px) {
   .main__index .hero .pechuga_link .img__pechuga {
@@ -1039,10 +1036,14 @@ dl, ol, ul {
   .main__index .hero .bg {
     padding: 95px;
   }
-}
-@media only screen and (max-width: 1078px) {
   .main__index .hero .pechuga_link p {
     width: 820px;
+  }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 22px;
+  }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 1064px) {
@@ -1194,6 +1195,12 @@ dl, ol, ul {
     width: 440px;
     height: 314px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 55px;
+  }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 974px) {
   .navbar-nav li a {
@@ -1245,6 +1252,9 @@ dl, ol, ul {
     width: 400px;
     height: 304px;
   }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 950px) {
   .main__index .hero .pechuga_link p {
@@ -1259,6 +1269,9 @@ dl, ol, ul {
   .navbar-nav li a {
     font-size: 17px;
   }
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 885px) {
   .main__index {
@@ -1266,6 +1279,9 @@ dl, ol, ul {
   }
   .navbar-nav li a {
     font-size: 16px;
+  }
+  .main__paginas__recomendadas h1 {
+    font-size: 45px;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -1601,12 +1617,25 @@ dl, ol, ul {
   }
 }
 @media only screen and (max-width: 768px) {
-  .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  .offcanvas,
+  .offcanvas-lg,
+  .offcanvas-md,
+  .offcanvas-sm,
+  .offcanvas-xl,
+  .offcanvas-xxl {
     --bs-offcanvas-transition: transform 0s ease-in-out;
+  }
+  .link, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 760px) {
-  .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  .offcanvas,
+  .offcanvas-lg,
+  .offcanvas-md,
+  .offcanvas-sm,
+  .offcanvas-xl,
+  .offcanvas-xxl {
     --bs-offcanvas-transition: transform 0.4s ease-in-out;
   }
 }
@@ -1635,6 +1664,9 @@ dl, ol, ul {
   }
   .main__index .hero .bg {
     padding: 80px;
+  }
+  .main__paginas__recomendadas h1 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 715px) {
@@ -1717,6 +1749,9 @@ dl, ol, ul {
   .main__index .grid__cards .area5 .empanadas_link h2 {
     font-size: 20px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 620px) {
   .main__index h1 {
@@ -1754,6 +1789,9 @@ dl, ol, ul {
   .main__index h1 {
     font-size: 35px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 571px) {
   .h2__footer {
@@ -1790,6 +1828,14 @@ dl, ol, ul {
     width: 470px;
   }
 }
+@media only screen and (max-width: 490px) {
+  .main__index .hero .pechuga_link .img__pechuga {
+    width: 410px;
+  }
+  .main__index .hero .pechuga_link p {
+    width: 390px;
+  }
+}
 @media only screen and (max-width: 487px) {
   .main__index .hero .pechuga_link .img__pechuga {
     width: 460px;
@@ -1805,6 +1851,14 @@ dl, ol, ul {
   .main__index .hero .pechuga_link p {
     width: 430px;
   }
+  .main__paginas__recomendadas h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 477px) {
+  .offcanvas {
+    max-width: 69%;
+  }
 }
 @media only screen and (max-width: 467px) {
   .main__index .hero .pechuga_link .img__pechuga {
@@ -1819,10 +1873,18 @@ dl, ol, ul {
     padding: 0;
   }
   .main__index .hero .pechuga_link .img__pechuga {
-    width: 420px;
+    width: 400px;
   }
   .main__index .hero .pechuga_link p {
     width: 400px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .col-md-2 {
+    width: 179px;
+  }
+  .main__index h1 {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -1839,27 +1901,6 @@ dl, ol, ul {
   }
   .nav__footer {
     padding-right: 16px;
-  }
-}
-@media only screen and (max-width: 490px) {
-  .main__index .hero .pechuga_link .img__pechuga {
-    width: 410px;
-  }
-  .main__index .hero .pechuga_link p {
-    width: 390px;
-  }
-}
-@media only screen and (max-width: 477px) {
-  .offcanvas {
-    max-width: 69%;
-  }
-}
-@media only screen and (max-width: 455px) {
-  .col-md-2 {
-    width: 179px;
-  }
-  .main__index h1 {
-    font-size: 28px;
   }
 }
 @media only screen and (max-width: 432px) {

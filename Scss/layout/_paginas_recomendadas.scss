@@ -1,10 +1,11 @@
-.main__paginas__recomendadas{
-    @include flex(column,center,center,0);
+.main__paginas__recomendadas {
+    @include flex(column, center, center, 0);
     width: 100%;
     min-height: 100vh;
     max-height: 100%;
     padding-top: 140px;
-    h1{
+
+    h1 {
         width: 100%;
         padding-bottom: 5px;
         text-align: center;
@@ -12,9 +13,10 @@
         font-weight: bold;
         font-family: $font-h1;
         color: #191919;
-        border-bottom:5px double gray;
+        border-bottom: 5px double gray;
     }
-    .hero__paginas__recomendadas{
+
+    .hero__paginas__recomendadas {
         display: grid;
         align-items: center;
         width: 100%;
@@ -24,96 +26,118 @@
         grid-template-rows: auto;
         row-gap: 7px;
         grid-template-columns: auto;
-        grid-template-areas: 
-         " area1b "
-         " area2b "
-         " area3b "
-         " area4b ";
+        grid-template-areas:
+            " area1b "
+            " area2b "
+            " area3b "
+            " area4b ";
 
-         .area1b{
-            display: flex;
-            align-items: center;
-            grid-area: area1b;
-            width: 100%;
-            height: 100%;
-            background-color: #a70101f1;
-            border-radius: 10px;
-            box-shadow: 0px 3px 3px 0px #0000003f;
-
-            a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                padding: 10px 5px 10px 5px;
-                .div__img__ailu__tokman{
-                    img{        
-                        width: 350px;
-                        height: 350px;
-                        object-fit: cover;    
-                        border-radius: 100%;
+            .area1b {
+                grid-area: area1b;
+                @extend .card_paginas_recomendas;
+                
+                a {
+                    @extend .link;
+    
+                    .div__img__1 {
+                        img {
+                            @extend .i_m_g;
+                        }
                     }
-                }
-                .div__ailu__tokman{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 15px;
-                    align-items: center;
-                    border-radius: 8px;
-                    &:hover{
-                    box-shadow: 0 0 10px #a70101;
-                }
-
-                    h2{
-                        align-self: center;
-                        width: auto;
-                        border-radius: 5px;
-                        font-size: 35px;
-                        text-align: center;
-                        color: white;
-                        font-family: $font-h2;
-                        background-color: black;
-                    }
-                    p{
-                        font-size: 24px;
-                        text-align: start;
-                        color: white;
-                        font-family: 'Signika Negative', sans-serif;
-                        font-weight: bold;
+    
+                    .div__1 {
+                        @extend .div__description;
+    
+                        h2 {
+                            @extend .titulo_card;
+                        }
+    
+                        p {
+                            @extend .parrafo_card;
+                        }
                     }
                 }
             }
 
-            }
-            .area2b{
-                display: flex;
-                align-items: center;
-                grid-area: area2b;
-                width: 100%;
-                height: 100%;
-                background-color: #a70101f1;
-                border-radius: 10px;
-                box-shadow: 0px 3px 3px 0px #0000003f;
-            }
-            .area3b{
-                display: flex;
-                align-items: center;
-                grid-area: area3b;
-                width: 100%;
-                height: 100%;
-                background-color: #a70101f1;
-                border-radius: 10px;
-                box-shadow: 0px 3px 3px 0px #0000003f;
-            }
-            .area4b{
-                display: flex;
-                align-items: center;
-                grid-area: area4b;
-                width: 100%;
-                height: 100%;
-                background-color: #a70101f1;
-                border-radius: 10px;
-                box-shadow: 0px 3px 3px 0px #0000003f;
+        .area2b {
+            grid-area: area2b;
+            @extend .card_paginas_recomendas;
+            
+            a {
+                @extend .link;
+
+                .div__img__2 {
+                    img {
+                        @extend .i_m_g;
+                    }
+                }
+
+                .div__2 {
+                    @extend .div__description;
+
+                    h2 {
+                        @extend .titulo_card;
+                    }
+
+                    p {
+                        @extend .parrafo_card;
+                    }
+                }
             }
         }
+
+        .area3b {
+            grid-area: area3b;
+            @extend .card_paginas_recomendas;
+            
+            a {
+                @extend .link;
+
+                .div__img__3 {
+                    img {
+                        @extend .i_m_g;
+                    }
+                }
+
+                .div__3 {
+                    @extend .div__description;
+
+                    h2 {
+                        @extend .titulo_card;
+                    }
+
+                    p {
+                        @extend .parrafo_card;
+                    }
+                }
+            }
+        }
+
+        .area4b {
+            grid-area: area4b;
+            @extend .card_paginas_recomendas;
+            
+            a {
+                @extend .link;
+
+                .div__img__4 {
+                    img {
+                        @extend .i_m_g;
+                    }
+                }
+
+                .div__4 {
+                    @extend .div__description;
+
+                    h2 {
+                        @extend .titulo_card;
+                    }
+
+                    p {
+                        @extend .parrafo_card;
+                    }
+                }
+            }
+        }
+    }
 }

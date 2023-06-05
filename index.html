@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">   
-    <!-- Css Style -->
-    <link rel="stylesheet" href="Css/style.css" />
-    <title>Hunger.com</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar bg-black fixed-top navbar-expand-md">
-        <div class="container-fluid">
-          <a href="index.html"><img src="assets/Logo_nav.png" alt=""class="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <i class="bi bi-list fs-1 text-white"></i>
-          </button>
-          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">Hunger</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                <i class="bi bi-arrow-right fs-1 text-white"></i>
-              </button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link icon-link text-" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Pages/Recetas.html">Recetas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Pages/Paginas_recomendadas.html">Paginas recomendadas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Pages/Cervecerias.html">Cervecerias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Pages/Restaurantes.html">Restaurantes</a>
-                </li>
-              </ul>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Css Style -->
+  <link rel="stylesheet" href="Css/style.css" />
+  <title>Hunger.com</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-black fixed-top navbar-expand-md">
+      <div class="container-fluid">
+        <a href="index.html"><img src="assets/Logo_nav.png" alt="" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-white"></i>
+        </button>
+        <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">Hunger</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="bi bi-arrow-right fs-1 text-white"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link icon-link text-" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/Recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/Paginas_recomendadas.html">Paginas recomendadas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/Cervecerias.html">Cervecerias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/Restaurantes.html">Restaurantes</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <main  class="main__index">
-      <h1>¡Sorprende con estas recetas!</h1>
-      <section class="hero">
-        <a href="#" class="pechuga_link">
-          <img src="assets/Pechuga_plato.png" alt="Pechuga_de_pollo" class="img__pechuga">
-          <p>¡BASTA DE PECHUGA DE POLLO SECA!: una versión súper cremosa y llena de sabor</p>
-        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="main__index">
+    <h1>¡Sorprende con estas recetas!</h1>
+    <section class="hero">
+      <a href="#" class="pechuga_link">
+        <img src="assets/Pechuga_plato.png" alt="Pechuga_de_pollo" class="img__pechuga">
+        <p>¡BASTA DE PECHUGA DE POLLO SECA!: una versión súper cremosa y llena de sabor</p>
+      </a>
       <section class="bg">
       </section>
       <section class="grid__cards">
         <div class="area1">
-        <a href=""class="lomo_link">
-          <img src="assets/lomo_a_la_pimienta.jpeg" alt="lomo_a_la_pimienta" class="grid__cards__lomo">
-          <h2>¡QUE LOMO!</h2>
-          <p>La receta fácil y deliciosa para preparar un clásico de la cocina casera. Aprende a cocinar el lomo perfecto con una salsa cremosa de pimienta, siguiendo esta receta detallada y sencilla. Descubre cómo obtener un corte tierno y jugoso, y el secreto para conseguir una salsa con el equilibrio perfecto entre sabor y cremosidad. Sorprende a tu familia y amigos con este plato clásico y elegante, perfecto para una cena especial en casa. ¡No te pierdas esta deliciosa receta casera de lomo a la pimienta!</p>
-        </a>
+          <a href="" class="lomo_link">
+            <img src="assets/lomo_a_la_pimienta.jpeg" alt="lomo_a_la_pimienta" class="grid__cards__lomo">
+            <h2>¡QUE LOMO!</h2>
+            <p>La receta fácil y deliciosa para preparar un clásico de la cocina casera. Aprende a cocinar el lomo
+              perfecto con una salsa cremosa de pimienta, siguiendo esta receta detallada y sencilla. Descubre cómo
+              obtener un corte tierno y jugoso, y el secreto para conseguir una salsa con el equilibrio perfecto entre
+              sabor y cremosidad. Sorprende a tu familia y amigos con este plato clásico y elegante, perfecto para una
+              cena especial en casa. ¡No te pierdas esta deliciosa receta casera de lomo a la pimienta!</p>
+          </a>
         </div>
         <div class="area2">
           <a href="" class="noquis_link">
-          <img src="assets/noquis_de_espinaca.jpeg" alt="" class="grid__cards__noquis">
-          <h2>Ñoquis de espinacas</h2>
-          <p>Una receta fácil, saludable y deliciosa para disfrutar en familia. Aprende a preparar esta opción vegetariana, rica en vitaminas y nutrientes, y sorprende a tus invitados con una opción diferente y sabrosa. ¡Anímate a probarlos!</p>
-        </a>
+            <img src="assets/noquis_de_espinaca.jpeg" alt="" class="grid__cards__noquis">
+            <h2>Ñoquis de espinacas</h2>
+            <p>Una receta fácil, saludable y deliciosa para disfrutar en familia. Aprende a preparar esta opción
+              vegetariana, rica en vitaminas y nutrientes, y sorprende a tus invitados con una opción diferente y
+              sabrosa. ¡Anímate a probarlos!</p>
+          </a>
         </div>
         <div class="area3">
           <a href="" class="sanguche_entraña_link">
-          <img src="assets/sanguche_de_entraña.png" alt="" class="grid__cards__sanguche">
-          <h2>Sanguche de Entraña</h2>
-          <p>Una opción irresistible con pan casero, lechuga fresca y tomate maduro. Descubre cómo preparar este delicioso sándwich con carne jugosa y tierna, combinada con ingredientes frescos y de calidad que realzan su sabor. ¡Anímate a probarlo y disfruta de un sándwich casero con ingredientes frescos y llenos de sabor</p>
-        </a>
+            <img src="assets/sanguche_de_entraña.png" alt="" class="grid__cards__sanguche">
+            <h2>Sanguche de Entraña</h2>
+            <p>Una opción irresistible con pan casero, lechuga fresca y tomate maduro. Descubre cómo preparar este
+              delicioso sándwich con carne jugosa y tierna, combinada con ingredientes frescos y de calidad que realzan
+              su sabor. ¡Anímate a probarlo y disfruta de un sándwich casero con ingredientes frescos y llenos de sabor
+            </p>
+          </a>
         </div>
         <div class="area4">
           <a href="" class="tita_casera_link">
-          <img src="assets/tita.png" alt="" class="grid__cards__tita_casera">
-          <h2>Titas caseras</h2>
-          <p>Sigue esta receta sencilla y obtén galletas dulces y crujientes. Descubre los ingredientes básicos y los pasos fáciles para hacerlas, con todo el sabor de una galleta tradicional. Ideal para disfrutar con un café o té, o simplemente como un dulce antojo. ¡Anímate a hacer tus propias tita caseras y sorprende a tus seres queridos con un delicioso postre casero!</p>
-        </a>
+            <img src="assets/tita.png" alt="" class="grid__cards__tita_casera">
+            <h2>Titas caseras</h2>
+            <p>Sigue esta receta sencilla y obtén galletas dulces y crujientes. Descubre los ingredientes básicos y los
+              pasos fáciles para hacerlas, con todo el sabor de una galleta tradicional. Ideal para disfrutar con un
+              café o té, o simplemente como un dulce antojo. ¡Anímate a hacer tus propias tita caseras y sorprende a tus
+              seres queridos con un delicioso postre casero!</p>
+          </a>
         </div>
         <div class="area5">
           <a href="" class="empanadas_link">
-          <img src="assets/Empanadas.png" alt="" class="grid__cards__empanadas">
-          <h2>Empanadas caseras</h2>
-          <p>Una receta fácil y deliciosa para preparar una clásica opción de comida rápida. Descubre cómo hacer una masa suave y dorada, rellena de un sabroso relleno con ingredientes frescos y de calidad. Aprende los pasos sencillos para armar y hornear tus empanadas, y sorprende a tu familia y amigos con una opción casera y sabrosa. ¡No te pierdas esta deliciosa receta de empanada casera!</p>
-        </a>
+            <img src="assets/Empanadas.png" alt="" class="grid__cards__empanadas">
+            <h2>Empanadas caseras</h2>
+            <p>Una receta fácil y deliciosa para preparar una clásica opción de comida rápida. Descubre cómo hacer una
+              masa suave y dorada, rellena de un sabroso relleno con ingredientes frescos y de calidad. Aprende los
+              pasos sencillos para armar y hornear tus empanadas, y sorprende a tu familia y amigos con una opción
+              casera y sabrosa. ¡No te pierdas esta deliciosa receta de empanada casera!</p>
+          </a>
         </div>
       </section>
       <section class="formulario">
-       <form>
-        <h2>¡Suscribite y enterate de las novedades de las recetas mas recientes!</h2>
-        <div class="inputs">
-          <label for="email">Email:</label>
-          <input type="email" placeholder="Escribe tu mail" class="caja_email">
-          <input type="submit" class="sumbit">
-        </div>
-       </form>
-      </section>
-    </main>
-    <footer>
-      <div class="container_footer ">
-        <footer class="footer d-flex justify-content-evenly align-items-center bg-black">
-          <div class="div_footer col-md-12 d-flex flex-nowrap justify-content-between align-items-center">
-            <a href="index.html" class="link__footer__link logomb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <img class="logo__footer" src="assets/logo.png" alt="Hunger">
-            </a>
-            <span class="h2__footer mb-3 mb-md-0 ">&copy; Hunger Company</span>
-           
-            <ul class="nav__footer col-md-2  justify-content-end align-self-center list-unstyled d-flex">
-              <li class="ms-3 "><a class="text-body-secondary" href="#"><i class="bi bi-instagram text-white fs-3"></i></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook text-white fs-3"></i></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter text-white fs-3"></i></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-info-circle text-white fs-3"></i></a></li>
-            </ul>
+        <form>
+          <h2>¡Suscribite y enterate de las novedades de las recetas mas recientes!</h2>
+          <div class="inputs">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Escribe tu mail" class="caja_email">
+            <input type="submit" class="sumbit">
           </div>
-        </footer>
-      </div>
-    </footer>
-    <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+        </form>
+      </section>
+  </main>
+  <footer>
+    <div class="container_footer ">
+      <footer class="footer d-flex justify-content-evenly align-items-center bg-black">
+        <div class="div_footer col-md-12 d-flex flex-nowrap justify-content-between align-items-center">
+          <a href="index.html"
+            class="link__footer__link logomb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img class="logo__footer" src="assets/logo.png" alt="Hunger">
+          </a>
+          <span class="h2__footer mb-3 mb-md-0 ">&copy; Hunger Company</span>
+
+          <ul class="nav__footer col-md-2  justify-content-end align-self-center list-unstyled d-flex">
+            <li class="ms-3 "><a class="text-body-secondary" href="#"><i
+                  class="bi bi-instagram text-white fs-3"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook text-white fs-3"></i></a>
+            </li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter text-white fs-3"></i></a>
+            </li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i
+                  class="bi bi-info-circle text-white fs-3"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </footer>
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
