@@ -1,0 +1,159 @@
+.main__cervecerias {
+  @include flex(column, center, center, 0);
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+
+  h1 {
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: $font-h1;
+    color: #191919;
+    border-bottom: 5px double gray;
+  }
+
+  .hero__paginas__recomendadas {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    grid-template-rows: auto;
+    row-gap: 7px;
+    grid-template-columns: auto;
+    grid-template-areas:
+      " area1c "
+      " area2c "
+      " area3c ";
+
+    .area1c {
+      grid-area: area1c;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__1 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__1 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+
+    .area2c {
+      grid-area: area2c;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__2 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__2 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+
+    .area3c {
+      grid-area: area3c;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__3 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__3 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+  }
+  .formulario {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    background-color: #dfa67b;
+    width: auto;
+    padding: 20px 200px;
+    border-radius: 5px;
+
+    form {
+      h2 {
+        font-size: 24px;
+        text-align: center;
+        background-color: #ffd966;
+        font-family: "Solway", serif;
+        font-weight: bold;
+      }
+      .inputs {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        label {
+          font-size: 24px;
+          font-family: "Solway", serif;
+          color: #040303;
+          margin-right: 5px;
+          font-style: italic;
+        }
+        .caja_email {
+          font-size: 24px;
+          font-family: "Solway", serif;
+          font-weight: bold;
+        }
+        .sumbit {
+          font-size: 20px;
+          padding: 3px;
+          font-family: "Solway", serif;
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

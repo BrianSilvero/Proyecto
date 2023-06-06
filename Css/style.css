@@ -133,7 +133,7 @@ ul {
   width: 200px;
 }
 
-.card_paginas_recomendas, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
+.card_paginas_recomendas, .main__restaurantes .hero__paginas__recomendadas .area3d, .main__restaurantes .hero__paginas__recomendadas .area2d, .main__restaurantes .hero__paginas__recomendadas .area1d, .main__cervecerias .hero__paginas__recomendadas .area3c, .main__cervecerias .hero__paginas__recomendadas .area2c, .main__cervecerias .hero__paginas__recomendadas .area1c, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
   display: flex;
   align-items: center;
   width: 100%;
@@ -142,11 +142,11 @@ ul {
   border-radius: 10px;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2470588235);
 }
-.card_paginas_recomendas:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b:hover {
+.card_paginas_recomendas:hover, .main__restaurantes .hero__paginas__recomendadas .area3d:hover, .main__restaurantes .hero__paginas__recomendadas .area2d:hover, .main__restaurantes .hero__paginas__recomendadas .area1d:hover, .main__cervecerias .hero__paginas__recomendadas .area3c:hover, .main__cervecerias .hero__paginas__recomendadas .area2c:hover, .main__cervecerias .hero__paginas__recomendadas .area1c:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b:hover, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b:hover {
   box-shadow: 0 0 10px #a70101;
 }
 
-.link, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a {
+.link, .main__restaurantes .hero__paginas__recomendadas .area3d a, .main__restaurantes .hero__paginas__recomendadas .area2d a, .main__restaurantes .hero__paginas__recomendadas .area1d a, .main__cervecerias .hero__paginas__recomendadas .area3c a, .main__cervecerias .hero__paginas__recomendadas .area2c a, .main__cervecerias .hero__paginas__recomendadas .area1c a, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,14 +154,14 @@ ul {
   padding: 10px 5px 10px 5px;
 }
 
-.i_m_g, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__img__4 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__img__3 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__img__2 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__img__1 img {
+.i_m_g, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__img__3 img, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__img__2 img, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__img__1 img, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__img__3 img, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__img__2 img, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__img__1 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__img__4 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__img__3 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__img__2 img, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__img__1 img {
   width: 350px;
   height: 350px;
   object-fit: cover;
   border-radius: 100%;
 }
 
-.div__description, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 {
+.div__description, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -169,7 +169,7 @@ ul {
   border-radius: 8px;
 }
 
-.titulo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 h2 {
+.titulo_card, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 h2, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 h2, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 h2, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 h2, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 h2, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 h2, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 h2 {
   align-self: center;
   width: auto;
   border-radius: 5px;
@@ -180,7 +180,7 @@ ul {
   background-color: black;
 }
 
-.parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p {
+.parrafo_card, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p {
   font-size: 24px;
   text-align: start;
   color: white;
@@ -297,7 +297,7 @@ ul {
 .main__index .grid__cards .area1 .lomo_link h2 {
   margin: 10px;
   font-size: 24px;
-  color: #FFF2CC;
+  color: #fff2cc;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
@@ -346,7 +346,7 @@ ul {
 }
 .main__index .grid__cards .area2 .noquis_link h2 {
   margin: 5px;
-  color: #FFF2CC;
+  color: #fff2cc;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
@@ -395,7 +395,7 @@ ul {
 }
 .main__index .grid__cards .area3 .sanguche_entraña_link h2 {
   margin: 5px;
-  color: #FFF2CC;
+  color: #fff2cc;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
@@ -445,7 +445,7 @@ ul {
 }
 .main__index .grid__cards .area4 .tita_casera_link h2 {
   margin: 5px;
-  color: #FFF2CC;
+  color: #fff2cc;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
@@ -495,7 +495,7 @@ ul {
 }
 .main__index .grid__cards .area5 .empanadas_link h2 {
   margin: 5px;
-  color: #FFF2CC;
+  color: #fff2cc;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
@@ -512,7 +512,7 @@ ul {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
-  background-color: #DFA67B;
+  background-color: #dfa67b;
   width: auto;
   padding: 20px 200px;
   border-radius: 5px;
@@ -520,7 +520,7 @@ ul {
 .main__index .formulario form h2 {
   font-size: 24px;
   text-align: center;
-  background-color: #FFD966;
+  background-color: #ffd966;
   font-family: "Solway", serif;
   font-weight: bold;
 }
@@ -549,7 +549,6 @@ ul {
   font-style: italic;
 }
 
-/* RECTAS.HTML.STYLE */
 .main__recetas {
   display: flex;
   flex-direction: column;
@@ -887,6 +886,77 @@ ul {
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
 }
+.main__recetas form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__recetas form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__recetas form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__recetas form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__recetas form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.main__recetas .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #dfa67b;
+  width: auto;
+  padding: 20px 200px;
+  border-radius: 5px;
+}
+.main__recetas .formulario form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__recetas .formulario form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__recetas .formulario form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__recetas .formulario form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__recetas .formulario form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
 
 .main__paginas__recomendadas {
   display: flex;
@@ -933,6 +1003,213 @@ ul {
 .main__paginas__recomendadas .hero__paginas__recomendadas .area4b {
   grid-area: area4b;
 }
+.main__paginas__recomendadas .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #dfa67b;
+  width: auto;
+  padding: 20px 200px;
+  border-radius: 5px;
+}
+.main__paginas__recomendadas .formulario form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__paginas__recomendadas .formulario form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__paginas__recomendadas .formulario form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__paginas__recomendadas .formulario form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__paginas__recomendadas .formulario form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main__cervecerias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+}
+.main__cervecerias h1 {
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__cervecerias .hero__paginas__recomendadas {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+  grid-template-rows: auto;
+  row-gap: 7px;
+  grid-template-columns: auto;
+  grid-template-areas: " area1c " " area2c " " area3c ";
+}
+.main__cervecerias .hero__paginas__recomendadas .area1c {
+  grid-area: area1c;
+}
+.main__cervecerias .hero__paginas__recomendadas .area2c {
+  grid-area: area2c;
+}
+.main__cervecerias .hero__paginas__recomendadas .area3c {
+  grid-area: area3c;
+}
+.main__cervecerias .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #dfa67b;
+  width: auto;
+  padding: 20px 200px;
+  border-radius: 5px;
+}
+.main__cervecerias .formulario form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__cervecerias .formulario form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__cervecerias .formulario form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__cervecerias .formulario form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__cervecerias .formulario form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main__restaurantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+}
+.main__restaurantes h1 {
+  width: 100%;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__restaurantes .hero__paginas__recomendadas {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+  grid-template-rows: auto;
+  row-gap: 7px;
+  grid-template-columns: auto;
+  grid-template-areas: " area1d " " area2d " " area3d ";
+}
+.main__restaurantes .hero__paginas__recomendadas .area1d {
+  grid-area: area1d;
+}
+.main__restaurantes .hero__paginas__recomendadas .area2d {
+  grid-area: area2d;
+}
+.main__restaurantes .hero__paginas__recomendadas .area3d {
+  grid-area: area3d;
+}
+.main__restaurantes .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #dfa67b;
+  width: auto;
+  padding: 20px 200px;
+  border-radius: 5px;
+}
+.main__restaurantes .formulario form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__restaurantes .formulario form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__restaurantes .formulario form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__restaurantes .formulario form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__restaurantes .formulario form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Media queris */
 @media only screen and (max-width: 1100px) {
   .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
@@ -1017,7 +1294,7 @@ ul {
     width: 490px;
     height: 334px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 24px;
   }
 }
@@ -1039,10 +1316,10 @@ ul {
   .main__index .hero .pechuga_link p {
     width: 820px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 22px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 22px;
   }
 }
@@ -1198,7 +1475,7 @@ ul {
   .main__paginas__recomendadas h1 {
     font-size: 55px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 20px;
   }
 }
@@ -1252,7 +1529,7 @@ ul {
     width: 400px;
     height: 304px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 18px;
   }
 }
@@ -1269,7 +1546,7 @@ ul {
   .navbar-nav li a {
     font-size: 17px;
   }
-  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p {
+  .parrafo_card, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a .div__1 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a .div__2 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a .div__3 p, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a .div__4 p, .main__cervecerias .hero__paginas__recomendadas .area1c a .div__1 p, .main__cervecerias .hero__paginas__recomendadas .area2c a .div__2 p, .main__cervecerias .hero__paginas__recomendadas .area3c a .div__3 p, .main__restaurantes .hero__paginas__recomendadas .area1d a .div__1 p, .main__restaurantes .hero__paginas__recomendadas .area2d a .div__2 p, .main__restaurantes .hero__paginas__recomendadas .area3d a .div__3 p {
     font-size: 16px;
   }
 }
@@ -1311,7 +1588,11 @@ ul {
     width: 350px;
     height: 300px;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 20px 100px;
   }
   .main__index .hero .pechuga_link p {
@@ -1506,13 +1787,22 @@ ul {
     gap: 18px;
     padding: 0px 10px;
   }
-  .main__index .formulario form h2 {
+  .main__index .formulario form h2,
+  .main__index .formulario form h2,
+  .main__restaurantes .formulario form h2,
+  .main__recetas .formulario form h2,
+  .main__paginas__recomendadas .formulario form h2,
+  .main__cervecerias .formulario form h2 {
     font-size: 20px;
   }
-  .main__index .formulario form .inputs label {
+  .main__index .formulario form .inputs label,
+  .main__restaurantes .formulario form .inputs label,
+  .main__recetas .formulario form .inputs label,
+  .main__paginas__recomendadas .formulario form .inputs label,
+  .main__cervecerias .formulario form .inputs label {
     font-size: 20px;
   }
-  .main__index .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 20px;
   }
   .main__index .hero .bg {
@@ -1625,7 +1915,7 @@ ul {
   .offcanvas-xxl {
     --bs-offcanvas-transition: transform 0s ease-in-out;
   }
-  .link, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a {
+  .link, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b a, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b a, .main__cervecerias .hero__paginas__recomendadas .area1c a, .main__cervecerias .hero__paginas__recomendadas .area2c a, .main__cervecerias .hero__paginas__recomendadas .area3c a, .main__restaurantes .hero__paginas__recomendadas .area1d a, .main__restaurantes .hero__paginas__recomendadas .area2d a, .main__restaurantes .hero__paginas__recomendadas .area3d a {
     flex-direction: column;
   }
 }
@@ -1650,16 +1940,24 @@ ul {
   .main__index .hero .pechuga_link p {
     font-size: 20px;
   }
-  .main__index .formulario form h2 {
+  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
     font-size: 18px;
   }
-  .main__index .formulario form .inputs label {
+  .main__index .formulario form .inputs label,
+  .main__restaurantes .formulario form .inputs label,
+  .main__recetas .formulario form .inputs label,
+  .main__paginas__recomendadas .formulario form .inputs label,
+  .main__cervecerias .formulario form .inputs label {
     font-size: 18px;
   }
-  .main__index .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 18px;
   }
-  .main__index .formulario form .inputs .sumbit {
+  .main__index .formulario form .inputs .sumbit,
+  .main__restaurantes .formulario form .inputs .sumbit,
+  .main__recetas .formulario form .inputs .sumbit,
+  .main__paginas__recomendadas .formulario form .inputs .sumbit,
+  .main__cervecerias .formulario form .inputs .sumbit {
     font-size: 18px;
   }
   .main__index .hero .bg {
@@ -1679,17 +1977,25 @@ ul {
   .main__index .hero .pechuga_link p {
     width: 590px;
   }
-  .main__index .formulario form h2 {
+  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
     font-size: 16px;
     font-weight: normal;
   }
-  .main__index .formulario form .inputs label {
+  .main__index .formulario form .inputs label,
+  .main__restaurantes .formulario form .inputs label,
+  .main__recetas .formulario form .inputs label,
+  .main__paginas__recomendadas .formulario form .inputs label,
+  .main__cervecerias .formulario form .inputs label {
     font-size: 16px;
   }
-  .main__index .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 16px;
   }
-  .main__index .formulario form .inputs .sumbit {
+  .main__index .formulario form .inputs .sumbit,
+  .main__restaurantes .formulario form .inputs .sumbit,
+  .main__recetas .formulario form .inputs .sumbit,
+  .main__paginas__recomendadas .formulario form .inputs .sumbit,
+  .main__cervecerias .formulario form .inputs .sumbit {
     font-size: 16px;
   }
 }
@@ -1699,7 +2005,11 @@ ul {
     justify-content: center;
     padding-left: 0;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 70px;
   }
   .main__index .hero .pechuga_link p {
@@ -1766,12 +2076,20 @@ ul {
   .main__index .hero .pechuga_link p {
     width: 500px;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 50px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 20px;
   }
   .main__index .hero .bg {
@@ -2052,16 +2370,28 @@ ul {
   .main__index .hero .pechuga_link .img__pechuga {
     width: 340px;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 10px;
   }
-  .main__index .formulario form .inputs label {
+  .main__index .formulario form .inputs label,
+  .main__restaurantes .formulario form .inputs label,
+  .main__recetas .formulario form .inputs label,
+  .main__paginas__recomendadas .formulario form .inputs label,
+  .main__cervecerias .formulario form .inputs label {
     font-size: 13px;
   }
-  .main__index .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 13px;
   }
-  .main__index .formulario form .inputs .sumbit {
+  .main__index .formulario form .inputs .sumbit,
+  .main__restaurantes .formulario form .inputs .sumbit,
+  .main__recetas .formulario form .inputs .sumbit,
+  .main__paginas__recomendadas .formulario form .inputs .sumbit,
+  .main__cervecerias .formulario form .inputs .sumbit {
     font-size: 13px;
   }
 }
@@ -2072,7 +2402,11 @@ ul {
   .main__index .hero .pechuga_link .img__pechuga {
     width: 330px;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 8px;
   }
   .main__index .hero .pechuga_link p {
@@ -2087,7 +2421,11 @@ ul {
     width: 330px;
     object-fit: cover;
   }
-  .main__index .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 8px;
   }
   .main__index .hero .pechuga_link .img__pechuga {

@@ -1,143 +1,187 @@
 .main__paginas__recomendadas {
-    @include flex(column, center, center, 0);
+  @include flex(column, center, center, 0);
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+
+  h1 {
     width: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-    padding-top: 140px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: $font-h1;
+    color: #191919;
+    border-bottom: 5px double gray;
+  }
 
-    h1 {
-        width: 100%;
-        padding-bottom: 5px;
+  .hero__paginas__recomendadas {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    grid-template-rows: auto;
+    row-gap: 7px;
+    grid-template-columns: auto;
+    grid-template-areas:
+      " area1b "
+      " area2b "
+      " area3b "
+      " area4b ";
+
+    .area1b {
+      grid-area: area1b;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__1 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__1 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+
+    .area2b {
+      grid-area: area2b;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__2 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__2 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+
+    .area3b {
+      grid-area: area3b;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__3 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__3 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+
+    .area4b {
+      grid-area: area4b;
+      @extend .card_paginas_recomendas;
+
+      a {
+        @extend .link;
+
+        .div__img__4 {
+          img {
+            @extend .i_m_g;
+          }
+        }
+
+        .div__4 {
+          @extend .div__description;
+
+          h2 {
+            @extend .titulo_card;
+          }
+
+          p {
+            @extend .parrafo_card;
+          }
+        }
+      }
+    }
+  }
+  .formulario {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    background-color: #dfa67b;
+    width: auto;
+    padding: 20px 200px;
+    border-radius: 5px;
+
+    form {
+      h2 {
+        font-size: 24px;
         text-align: center;
-        font-size: 65px;
+        background-color: #ffd966;
+        font-family: "Solway", serif;
         font-weight: bold;
-        font-family: $font-h1;
-        color: #191919;
-        border-bottom: 5px double gray;
+      }
+      .inputs {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        label {
+          font-size: 24px;
+          font-family: "Solway", serif;
+          color: #040303;
+          margin-right: 5px;
+          font-style: italic;
+        }
+        .caja_email {
+          font-size: 24px;
+          font-family: "Solway", serif;
+          font-weight: bold;
+        }
+        .sumbit {
+          font-size: 20px;
+          padding: 3px;
+          font-family: "Solway", serif;
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
     }
-
-    .hero__paginas__recomendadas {
-        display: grid;
-        align-items: center;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        padding: 0px 20px;
-        grid-template-rows: auto;
-        row-gap: 7px;
-        grid-template-columns: auto;
-        grid-template-areas:
-            " area1b "
-            " area2b "
-            " area3b "
-            " area4b ";
-
-            .area1b {
-                grid-area: area1b;
-                @extend .card_paginas_recomendas;
-                
-                a {
-                    @extend .link;
-    
-                    .div__img__1 {
-                        img {
-                            @extend .i_m_g;
-                        }
-                    }
-    
-                    .div__1 {
-                        @extend .div__description;
-    
-                        h2 {
-                            @extend .titulo_card;
-                        }
-    
-                        p {
-                            @extend .parrafo_card;
-                        }
-                    }
-                }
-            }
-
-        .area2b {
-            grid-area: area2b;
-            @extend .card_paginas_recomendas;
-            
-            a {
-                @extend .link;
-
-                .div__img__2 {
-                    img {
-                        @extend .i_m_g;
-                    }
-                }
-
-                .div__2 {
-                    @extend .div__description;
-
-                    h2 {
-                        @extend .titulo_card;
-                    }
-
-                    p {
-                        @extend .parrafo_card;
-                    }
-                }
-            }
-        }
-
-        .area3b {
-            grid-area: area3b;
-            @extend .card_paginas_recomendas;
-            
-            a {
-                @extend .link;
-
-                .div__img__3 {
-                    img {
-                        @extend .i_m_g;
-                    }
-                }
-
-                .div__3 {
-                    @extend .div__description;
-
-                    h2 {
-                        @extend .titulo_card;
-                    }
-
-                    p {
-                        @extend .parrafo_card;
-                    }
-                }
-            }
-        }
-
-        .area4b {
-            grid-area: area4b;
-            @extend .card_paginas_recomendas;
-            
-            a {
-                @extend .link;
-
-                .div__img__4 {
-                    img {
-                        @extend .i_m_g;
-                    }
-                }
-
-                .div__4 {
-                    @extend .div__description;
-
-                    h2 {
-                        @extend .titulo_card;
-                    }
-
-                    p {
-                        @extend .parrafo_card;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
