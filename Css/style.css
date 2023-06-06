@@ -2345,6 +2345,9 @@ ul {
   .main__index .grid__cards .area5 .empanadas_link h2 {
     font-size: 18px;
   }
+  .main__restaurantes h1 {
+    font-size: 45px;
+  }
 }
 @media only screen and (max-width: 393px) {
   .col-md-2 {
@@ -2384,6 +2387,9 @@ ul {
   }
   .nav__footer {
     padding-right: 27px;
+  }
+  .main__restaurantes h1 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 388px) {
