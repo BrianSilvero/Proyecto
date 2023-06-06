@@ -1944,6 +1944,9 @@
   .nav__footer {
     padding-right: 16px;
   }
+  .main__cervecerias .hero__paginas__recomendadas {
+    padding: 0px 0px;
+  }
 }
 
 @media only screen and (max-width: 432px) {
@@ -1970,10 +1973,6 @@
   .main__restaurantes .hero__paginas__recomendadas {
     padding: 0px 0px;
   }
-  .main__cervecerias .hero__paginas__recomendadas {
-    padding: 0px 0px;
-  }
-
   .main__index .hero .pechuga_link p {
     width: 370px;
   }
