@@ -591,7 +591,11 @@
   .main__cervecerias .formulario form .inputs label {
     font-size: 20px;
   }
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 20px;
   }
   .main__index .hero .bg {
@@ -729,7 +733,11 @@
   .main__index .hero .pechuga_link p {
     font-size: 20px;
   }
-  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
+  .main__index .formulario form h2,
+  .main__restaurantes .formulario form h2,
+  .main__recetas .formulario form h2,
+  .main__paginas__recomendadas .formulario form h2,
+  .main__cervecerias .formulario form h2 {
     font-size: 18px;
   }
   .main__index .formulario form .inputs label,
@@ -739,7 +747,11 @@
   .main__cervecerias .formulario form .inputs label {
     font-size: 18px;
   }
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 18px;
   }
   .main__index .formulario form .inputs .sumbit,
@@ -766,7 +778,11 @@
   .main__index .hero .pechuga_link p {
     width: 590px;
   }
-  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
+  .main__index .formulario form h2,
+  .main__restaurantes .formulario form h2,
+  .main__recetas .formulario form h2,
+  .main__paginas__recomendadas .formulario form h2,
+  .main__cervecerias .formulario form h2 {
     font-size: 16px;
     font-weight: normal;
   }
@@ -777,7 +793,11 @@
   .main__cervecerias .formulario form .inputs label {
     font-size: 16px;
   }
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 16px;
   }
   .main__index .formulario form .inputs .sumbit,
@@ -1020,6 +1040,9 @@
   .main__index h1 {
     font-size: 26px;
   }
+  .main__restaurantes h1 {
+    font-size: 55px;
+  }
 }
 @media only screen and (max-width: 421px) {
   .main__index .hero .pechuga_link .img__pechuga {
@@ -1173,7 +1196,11 @@
   .main__cervecerias .formulario form .inputs label {
     font-size: 13px;
   }
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 13px;
   }
   .main__index .formulario form .inputs .sumbit,

@@ -1365,7 +1365,11 @@
     font-size: 20px;
   }
 
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 20px;
   }
 
@@ -1573,7 +1577,11 @@
     font-size: 20px;
   }
 
-  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
+  .main__index .formulario form h2,
+  .main__restaurantes .formulario form h2,
+  .main__recetas .formulario form h2,
+  .main__paginas__recomendadas .formulario form h2,
+  .main__cervecerias .formulario form h2 {
     font-size: 18px;
   }
 
@@ -1585,7 +1593,11 @@
     font-size: 18px;
   }
 
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 18px;
   }
 
@@ -1619,7 +1631,11 @@
     width: 590px;
   }
 
-  .main__index .formulario form h2, .main__restaurantes .formulario form h2, .main__recetas .formulario form h2, .main__paginas__recomendadas .formulario form h2, .main__cervecerias .formulario form h2 {
+  .main__index .formulario form h2,
+  .main__restaurantes .formulario form h2,
+  .main__recetas .formulario form h2,
+  .main__paginas__recomendadas .formulario form h2,
+  .main__cervecerias .formulario form h2 {
     font-size: 16px;
     font-weight: normal;
   }
@@ -1632,7 +1648,11 @@
     font-size: 16px;
   }
 
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 16px;
   }
 
@@ -1757,11 +1777,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .main__index .formulario,
-    .main__restaurantes .formulario,
-    .main__recetas .formulario,
-    .main__paginas__recomendadas .formulario,
-    .main__cervecerias .formulario {
+  .main__index .formulario,
+  .main__restaurantes .formulario,
+  .main__recetas .formulario,
+  .main__paginas__recomendadas .formulario,
+  .main__cervecerias .formulario {
     padding: 15px 20px;
   }
 
@@ -1937,6 +1957,9 @@
 
   .main__index h1 {
     font-size: 26px;
+  }
+  .main__restaurantes h1 {
+    font-size: 55px;
   }
 }
 
@@ -2143,7 +2166,11 @@
     font-size: 13px;
   }
 
-  .main__index .formulario form .inputs .caja_email, .main__restaurantes .formulario form .inputs .caja_email, .main__recetas .formulario form .inputs .caja_email, .main__paginas__recomendadas .formulario form .inputs .caja_email, .main__cervecerias .formulario form .inputs .caja_email {
+  .main__index .formulario form .inputs .caja_email,
+  .main__restaurantes .formulario form .inputs .caja_email,
+  .main__recetas .formulario form .inputs .caja_email,
+  .main__paginas__recomendadas .formulario form .inputs .caja_email,
+  .main__cervecerias .formulario form .inputs .caja_email {
     font-size: 13px;
   }
 
