@@ -2259,6 +2259,9 @@ ul {
   .main__index .hero .pechuga_link .img__pechuga {
     width: 390px;
   }
+  .main__restaurantes .hero__paginas__recomendadas {
+    padding: 0px 0px;
+  }
   .main__index .hero .pechuga_link p {
     width: 370px;
   }
