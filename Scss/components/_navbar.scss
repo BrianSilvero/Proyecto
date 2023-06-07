@@ -1,14 +1,14 @@
 /* Menu de navegacion */
 header {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .logo {
-    min-width: 150px;
-    max-width: 100%;
-    height: 100px;
-    width: 200px;
-    object-fit: cover;
+  min-width: 150px;
+  max-width: 100%;
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
 }
 
 .container,
@@ -18,49 +18,44 @@ header {
 .container-sm,
 .container-xl,
 .container-xxl {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-    width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-right: 0;
-    margin-left: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28, 999, 999, 1000.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28, 999, 999, 1000.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .logo {
-    padding-bottom: 7px;
+  padding-bottom: 7px;
 }
 
 .navbar-nav li a {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-bottom: 1px transparent;
-    font-family: 'Solway', serif;
-}
-
-.navbar-nav li a:hover {
-    color: #54BAB9;
-}
-
-.nav-item {
-    padding: 0px 5px;
-    border-bottom: 1px transparent;
-    transition: 0.08s;
-}
-
-.nav-item:hover {
-    border-bottom: 1px solid #54BAB9;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Solway", serif;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size 0.40s;
+  &:hover {
+    color: #54bab9;
+    background-image: linear-gradient(#54bab9, #54bab9);
+    background-size: 100% 3px;
+  }
 }
 
 .btn-close {
-    --bs-btn-close-focus-shadow: 0;
+  --bs-btn-close-focus-shadow: 0;
 }
 
 .offcanvas-header .btn-close {
-    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * 1.5);
+  padding: calc(var(--bs-offcanvas-padding-y) * 0.5)
+    calc(var(--bs-offcanvas-padding-x) * 1.5);
 }
