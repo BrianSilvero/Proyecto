@@ -43,7 +43,7 @@ header {
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 3px;
-  transition: background-size 0.40s;
+  transition: background-size 0.4s;
   &:hover {
     color: #54bab9;
     background-image: linear-gradient(#54bab9, #54bab9);
@@ -58,4 +58,44 @@ header {
 .offcanvas-header .btn-close {
   padding: calc(var(--bs-offcanvas-padding-y) * 0.5)
     calc(var(--bs-offcanvas-padding-x) * 1.5);
+}
+
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw);
+  text-align: center;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.text-white-1 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(247, 10, 247);
+  }
+}
+.text-white-2 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(0, 67, 253);
+  }
+}
+.text-white-3 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(0, 190, 253);
+  }
+}
+.text-white-4 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(230, 245, 25);
+  }
 }
