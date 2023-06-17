@@ -1,46 +1,92 @@
 /* footer */
 footer {
-    height: 96px;
+  height: 96px;
 }
 
 .logo__footer {
-    height: 95px;
-    width: 200px;
-    object-fit: cover;
+  height: 95px;
+  width: 200px;
+  object-fit: cover;
 }
 
 .container_footer {
-    margin: 0;
+  margin: 0;
 }
 
 .h2__footer {
-    font-family: 'Solway', serif;
-    color: white;
+  font-family: "Solway", serif;
+  color: white;
 }
 
 .mb-4 {
-    margin-bottom: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .mb-3 {
-    margin-bottom: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .me-2 {
-    margin-right: 0rem !important;
+  margin-right: 0rem !important;
 }
 
 .nav__footer {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 dl,
 ol,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .col-md-2 {
-    width: 200px;
+  width: 200px;
 }
+
+.bi bi-instagram text-white-1 fs-3 {
+  font-size: 50px;
+}
+
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw);
+  font-size: 50px;
+  text-align: center;
+  &:hover { 
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.text-white-1 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(247, 10, 247);
+  }
+}
+.text-white-2 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(0, 67, 253);
+  }
+}
+.text-white-3 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(0, 190, 253);
+  }
+}
+.text-white-4 {
+  color: white;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(230, 245, 25);
+  }
+}
+

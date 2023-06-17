@@ -16,7 +16,11 @@ li {
 }
 
 body {
-  background-color: #F7ECDE;
+  background-color: #f7ecde;
+}
+
+.informacion__body {
+  background-color: #ffffff;
 }
 
 /* Menu de navegacion */
@@ -80,49 +84,6 @@ header {
   padding: calc(var(--bs-offcanvas-padding-y) * 0.5) calc(var(--bs-offcanvas-padding-x) * 1.5);
 }
 
-.fs-3 {
-  font-size: calc(1.3rem + 0.6vw);
-  text-align: center;
-}
-.fs-3:hover {
-  background-color: transparent;
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.text-white-1 {
-  color: white;
-  transition: 0.3s;
-}
-.text-white-1:hover {
-  color: rgb(247, 10, 247);
-}
-
-.text-white-2 {
-  color: white;
-  transition: 0.3s;
-}
-.text-white-2:hover {
-  color: rgb(0, 67, 253);
-}
-
-.text-white-3 {
-  color: white;
-  transition: 0.3s;
-}
-.text-white-3:hover {
-  color: rgb(0, 190, 253);
-}
-
-.text-white-4 {
-  color: white;
-  transition: 0.3s;
-}
-.text-white-4:hover {
-  color: rgb(230, 245, 25);
-}
-
 /* footer */
 footer {
   height: 96px;
@@ -168,6 +129,54 @@ ul {
 
 .col-md-2 {
   width: 200px;
+}
+
+.bi bi-instagram text-white-1 fs-3 {
+  font-size: 50px;
+}
+
+.fs-3 {
+  font-size: calc(1.3rem + 0.6vw);
+  font-size: 50px;
+  text-align: center;
+}
+.fs-3:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.text-white-1 {
+  color: white;
+  transition: 0.3s;
+}
+.text-white-1:hover {
+  color: rgb(247, 10, 247);
+}
+
+.text-white-2 {
+  color: white;
+  transition: 0.3s;
+}
+.text-white-2:hover {
+  color: rgb(0, 67, 253);
+}
+
+.text-white-3 {
+  color: white;
+  transition: 0.3s;
+}
+.text-white-3:hover {
+  color: rgb(0, 190, 253);
+}
+
+.text-white-4 {
+  color: white;
+  transition: 0.3s;
+}
+.text-white-4:hover {
+  color: rgb(230, 245, 25);
 }
 
 .card_paginas_recomendas, .main__restaurantes .hero__paginas__recomendadas .area3d, .main__restaurantes .hero__paginas__recomendadas .area2d, .main__restaurantes .hero__paginas__recomendadas .area1d, .main__cervecerias .hero__paginas__recomendadas .area3c, .main__cervecerias .hero__paginas__recomendadas .area2c, .main__cervecerias .hero__paginas__recomendadas .area1c, .main__paginas__recomendadas .hero__paginas__recomendadas .area4b, .main__paginas__recomendadas .hero__paginas__recomendadas .area3b, .main__paginas__recomendadas .hero__paginas__recomendadas .area2b, .main__paginas__recomendadas .hero__paginas__recomendadas .area1b {
@@ -1247,6 +1256,92 @@ ul {
   font-style: italic;
 }
 
+.main__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  padding-top: 140px;
+}
+.main__informacion h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  font-family: "Hammersmith One", sans-serif;
+  color: #191919;
+  border-bottom: 5px double gray;
+}
+.main__informacion a img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: solid 1px grey;
+  transition: 0.5s;
+}
+.main__informacion a img:hover {
+  box-shadow: 0 0 13px #000000;
+}
+.main__informacion h2 {
+  padding-top: 5px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #040303;
+}
+.main__informacion .presentacion__brian__silvero {
+  padding: 10px;
+}
+.main__informacion .presentacion__brian__silvero p {
+  text-align: start;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main__informacion .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  background-color: #dfa67b;
+  width: auto;
+  padding: 20px 200px;
+  border-radius: 5px;
+}
+.main__informacion .formulario form h2 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #ffd966;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__informacion .formulario form .inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main__informacion .formulario form .inputs label {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  color: #040303;
+  margin-right: 5px;
+  font-style: italic;
+}
+.main__informacion .formulario form .inputs .caja_email {
+  font-size: 24px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+}
+.main__informacion .formulario form .inputs .sumbit {
+  font-size: 20px;
+  padding: 3px;
+  font-family: "Solway", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Media queris */
 @media only screen and (max-width: 1100px) {
   .main__recetas .hero__recetas .area1a .pechuga__link__recetas .div__recetas__pechuga h2 {
@@ -1629,7 +1724,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 20px 100px;
   }
   .main__index .hero .pechuga_link p {
@@ -1829,21 +1924,21 @@ ul {
   .main__restaurantes .formulario form h2,
   .main__recetas .formulario form h2,
   .main__paginas__recomendadas .formulario form h2,
-  .main__cervecerias .formulario form h2 {
+  .main__cervecerias .formulario form h2, .main__informacion .formulario form h2 {
     font-size: 20px;
   }
   .main__index .formulario form .inputs label,
   .main__restaurantes .formulario form .inputs label,
   .main__recetas .formulario form .inputs label,
   .main__paginas__recomendadas .formulario form .inputs label,
-  .main__cervecerias .formulario form .inputs label {
+  .main__cervecerias .formulario form .inputs label, .main__informacion .formulario form .inputs label {
     font-size: 20px;
   }
   .main__index .formulario form .inputs .caja_email,
   .main__restaurantes .formulario form .inputs .caja_email,
   .main__recetas .formulario form .inputs .caja_email,
   .main__paginas__recomendadas .formulario form .inputs .caja_email,
-  .main__cervecerias .formulario form .inputs .caja_email {
+  .main__cervecerias .formulario form .inputs .caja_email, .main__informacion .formulario form .inputs .caja_email {
     font-size: 20px;
   }
   .main__index .hero .bg {
@@ -1985,28 +2080,28 @@ ul {
   .main__restaurantes .formulario form h2,
   .main__recetas .formulario form h2,
   .main__paginas__recomendadas .formulario form h2,
-  .main__cervecerias .formulario form h2 {
+  .main__cervecerias .formulario form h2, .main__informacion .formulario form h2 {
     font-size: 18px;
   }
   .main__index .formulario form .inputs label,
   .main__restaurantes .formulario form .inputs label,
   .main__recetas .formulario form .inputs label,
   .main__paginas__recomendadas .formulario form .inputs label,
-  .main__cervecerias .formulario form .inputs label {
+  .main__cervecerias .formulario form .inputs label, .main__informacion .formulario form .inputs label {
     font-size: 18px;
   }
   .main__index .formulario form .inputs .caja_email,
   .main__restaurantes .formulario form .inputs .caja_email,
   .main__recetas .formulario form .inputs .caja_email,
   .main__paginas__recomendadas .formulario form .inputs .caja_email,
-  .main__cervecerias .formulario form .inputs .caja_email {
+  .main__cervecerias .formulario form .inputs .caja_email, .main__informacion .formulario form .inputs .caja_email {
     font-size: 18px;
   }
   .main__index .formulario form .inputs .sumbit,
   .main__restaurantes .formulario form .inputs .sumbit,
   .main__recetas .formulario form .inputs .sumbit,
   .main__paginas__recomendadas .formulario form .inputs .sumbit,
-  .main__cervecerias .formulario form .inputs .sumbit {
+  .main__cervecerias .formulario form .inputs .sumbit, .main__informacion .formulario form .inputs .sumbit {
     font-size: 18px;
   }
   .main__index .hero .bg {
@@ -2030,7 +2125,7 @@ ul {
   .main__restaurantes .formulario form h2,
   .main__recetas .formulario form h2,
   .main__paginas__recomendadas .formulario form h2,
-  .main__cervecerias .formulario form h2 {
+  .main__cervecerias .formulario form h2, .main__informacion .formulario form h2 {
     font-size: 16px;
     font-weight: normal;
   }
@@ -2038,21 +2133,21 @@ ul {
   .main__restaurantes .formulario form .inputs label,
   .main__recetas .formulario form .inputs label,
   .main__paginas__recomendadas .formulario form .inputs label,
-  .main__cervecerias .formulario form .inputs label {
+  .main__cervecerias .formulario form .inputs label, .main__informacion .formulario form .inputs label {
     font-size: 16px;
   }
   .main__index .formulario form .inputs .caja_email,
   .main__restaurantes .formulario form .inputs .caja_email,
   .main__recetas .formulario form .inputs .caja_email,
   .main__paginas__recomendadas .formulario form .inputs .caja_email,
-  .main__cervecerias .formulario form .inputs .caja_email {
+  .main__cervecerias .formulario form .inputs .caja_email, .main__informacion .formulario form .inputs .caja_email {
     font-size: 16px;
   }
   .main__index .formulario form .inputs .sumbit,
   .main__restaurantes .formulario form .inputs .sumbit,
   .main__recetas .formulario form .inputs .sumbit,
   .main__paginas__recomendadas .formulario form .inputs .sumbit,
-  .main__cervecerias .formulario form .inputs .sumbit {
+  .main__cervecerias .formulario form .inputs .sumbit, .main__informacion .formulario form .inputs .sumbit {
     font-size: 16px;
   }
 }
@@ -2066,7 +2161,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 70px;
   }
   .main__index .hero .pechuga_link p {
@@ -2137,7 +2232,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 50px;
   }
 }
@@ -2146,7 +2241,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 20px;
   }
   .main__index .hero .bg {
@@ -2446,28 +2541,28 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 10px;
   }
   .main__index .formulario form .inputs label,
   .main__restaurantes .formulario form .inputs label,
   .main__recetas .formulario form .inputs label,
   .main__paginas__recomendadas .formulario form .inputs label,
-  .main__cervecerias .formulario form .inputs label {
+  .main__cervecerias .formulario form .inputs label, .main__informacion .formulario form .inputs label {
     font-size: 13px;
   }
   .main__index .formulario form .inputs .caja_email,
   .main__restaurantes .formulario form .inputs .caja_email,
   .main__recetas .formulario form .inputs .caja_email,
   .main__paginas__recomendadas .formulario form .inputs .caja_email,
-  .main__cervecerias .formulario form .inputs .caja_email {
+  .main__cervecerias .formulario form .inputs .caja_email, .main__informacion .formulario form .inputs .caja_email {
     font-size: 13px;
   }
   .main__index .formulario form .inputs .sumbit,
   .main__restaurantes .formulario form .inputs .sumbit,
   .main__recetas .formulario form .inputs .sumbit,
   .main__paginas__recomendadas .formulario form .inputs .sumbit,
-  .main__cervecerias .formulario form .inputs .sumbit {
+  .main__cervecerias .formulario form .inputs .sumbit, .main__informacion .formulario form .inputs .sumbit {
     font-size: 13px;
   }
 }
@@ -2482,7 +2577,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 8px;
   }
   .main__index .hero .pechuga_link p {
@@ -2501,7 +2596,7 @@ ul {
   .main__restaurantes .formulario,
   .main__recetas .formulario,
   .main__paginas__recomendadas .formulario,
-  .main__cervecerias .formulario {
+  .main__cervecerias .formulario, .main__informacion .formulario {
     padding: 15px 8px;
   }
   .main__index .hero .pechuga_link .img__pechuga {

@@ -1,21 +1,24 @@
 /* fuente */
 
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,300;1,500&family=Signika+Negative:wght@300&family=Solway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital@1&family=Roboto:ital,wght@0,300;1,500&family=Signika+Negative:wght@300&family=Solway&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 body {
-    background-color: #F7ECDE;
+  background-color: #f7ecde;
+}
+.informacion__body{
+  background-color: #ffffff;
 }
