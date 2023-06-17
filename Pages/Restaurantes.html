@@ -37,15 +37,15 @@
   <header>
     <nav class="navbar bg-black fixed-top navbar-expand-md">
       <div class="container-fluid">
-        <a href="../index.html"><img src="../assets/logo_nav.jpg" alt="" class="logo"></a>
+        <a href="index.html"><img src="assets/logo_nav.jpg" alt="" class="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <i class="bi bi-list fs-1 text-white"></i>
         </button>
         <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
+          aria-labelledby="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Hunger</h5>
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel" data-bs-dismiss="offcanvas">Hunger</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="bi bi-arrow-right fs-1 text-white"></i>
             </button>
@@ -53,21 +53,25 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link icon-link text-" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link icon-link text-" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Recetas.html">Recetas</a>
+                <a class="nav-link" href="Pages/Recetas.html">Recetas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Paginas_recomendadas.html">Paginas recomendadas</a>
+                <a class="nav-link" href="Pages/Paginas_recomendadas.html">Paginas recomendadas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Cervecerias.html">Cervecerias</a>
+                <a class="nav-link" href="Pages/Cervecerias.html">Cervecerias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Restaurantes.html">Restaurantes</a>
+                <a class="nav-link" href="Pages/Restaurantes.html">Restaurantes</a>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
   <main class="main__restaurantes">
     <h1 class="h1__restaurantes">Restaurantes</h1>
