@@ -1,87 +1,78 @@
-.main__informacion {
-  @include flex(column, center, center, 0);
-  width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  padding-top: 140px;
-  h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 65px;
-    font-weight: bold;
-    font-family: $font-h1;
-    color: #191919;
-    border-bottom: 5px double gray;
-  }
-  a {
-    img {
-      width: 400px;
-      height: 400px;
-      border-radius: 100%;
+// Fuentes de internet
+html{
+  font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
+
+  body{
+    .inicio{
+      background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+      background-image: url("../assets/codigos.jpg");
       object-fit: cover;
-      border: solid 1px grey;
-      transition: 0.5s;
-      &:hover {
-        box-shadow: 0 0 13px #000000;
-      }
-    }
-  }
-  h2 {
-    padding-top: 5px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #040303;
-  }
-  .presentacion__brian__silvero {
-    padding: 10px;
+      background-size: cover;
+      background-position: center center;
+      color: #fff;
 
-    p {
-      text-align: start;
-      font-weight: bold;
-      font-size: 18px;
-    }
-  }
-  .formulario {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-    background-color: #dfa67b;
-    width: auto;
-    padding: 20px 200px;
-    border-radius: 5px;
-
-    form {
-      h2 {
-        font-size: 24px;
+      .contenido-seccion{
+        max-width: 1000px;
+        margin: auto;
         text-align: center;
-        background-color: #ffd966;
-        font-family: "Solway", serif;
-        font-weight: bold;
-      }
-      .inputs {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+        padding: 0 10px;
 
-        label {
-          font-size: 24px;
-          font-family: "Solway", serif;
-          color: #040303;
-          margin-right: 5px;
-          font-style: italic;
+        header{
+          padding: 30px;
+          nav{
+            position: fixed;
+            margin-left: 60px;
+            background-color: #19d1ff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            z-index: 99;
+            display: none;
+            
+            a{
+              display: block;
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 10px;
+              font-weight: bold;
+            }
+          }
+          .logo-cv{
+            font-weight: bold;
+            font-size: 2.5rem;
+            font-family: 'Yellowtail', cursive;
+            text-shadow: 0 0 35px #fff;
+
+            .color{
+              color: #179aac;
+              font-family: 'Yellowtail', cursive;
+            }
+          }
+          .nav-bar{
+            position: fixed;
+            background-color: #19d1ff;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+              box-shadow: 0 0 35px #fff;
+            }
+          }
         }
-        .caja_email {
-          font-size: 24px;
-          font-family: "Solway", serif;
-          font-weight: bold;
+        .info{
+          padding-bottom: 130px;
+          
+          h1{
+            font-size: 3rem;
+            letter-spacing: 5px;
+          }
         }
-        .sumbit {
-          font-size: 20px;
-          padding: 3px;
-          font-family: "Solway", serif;
-          font-weight: bold;
-          font-style: italic;
-        }
+
       }
     }
   }
