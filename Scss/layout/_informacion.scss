@@ -9,7 +9,7 @@ html{
       background-image: url("../assets/codigos.jpg");
       object-fit: cover;
       background-size: cover;
-      background-position: center center;
+      background-position: center bottom;
       color: #fff;
 
       .contenido-seccion{
@@ -71,9 +71,107 @@ html{
             font-size: 3rem;
             letter-spacing: 5px;
           }
-        }
+          h2{
+            font-weight: normal;
+            font-size: 20px;
+            margin-top: -10px;
+            letter-spacing: 2px;
+          }
+          .redes{
+            margin: 20px 0;
 
+            a{
+              display: inline-block;
+              background-color: #000;
+              color: #179aac;
+              border: 1px solid #179aac;
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              margin: 0 5px;
+              transition: .3s;
+              &:hover{
+                color: #fff;
+                background-color:#179aac;
+                box-shadow: 0 0 20px #fff;
+              } 
+            }
+          }
+        }
+        .foto{
+          position: relative;
+          .img__brian_silvero{
+            width: 250px;
+            border-radius: 50%;
+            border: 3px solid #179aac;
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            transform: translateX(-50%);
+          }
+        }
       }
     }
+
+    // Seccion sobre mi 
+    .sobremi{
+      background-color: #e6e6e6;
+      padding: 140px 0 100px 0;
+      text-align: center;
+
+      .contenido-seccion{
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 10px;
+        .titulo-seccion{
+          font-family: 'Yellowtail', cursive;
+          font-size: 2.5rem;
+
+        }
+        h3{
+          text-transform: uppercase;
+          font-size: 30px;
+        }
+        .especial{
+          color: #179aac;
+          font-weight: bold;
+          margin-top: 15px;
+        }
+        p{
+          max-width: 700px;
+          margin: auto;
+          color: #000;
+          font-weight: bold;
+        }
+        .fila{
+          display: flex;
+          margin-top: 30px;
+          justify-content: space-between;
+
+          .col{
+            width: 30%;
+
+            i{
+              color: #179aac;
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              border: 2px solid #179aac;
+              line-height: 40px;
+              border-radius: 50%;
+            }
+            span{
+              display: block;
+              font-weight: bold;
+              margin: 8px 0;
+            }
+          }
+        }
+      }
+    }
+
+    // Seccion habilidades
+
   }
 }
