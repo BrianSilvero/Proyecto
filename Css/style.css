@@ -1415,6 +1415,112 @@ html body .sobremi .contenido-seccion .fila .col span {
   font-weight: bold;
   margin: 8px 0;
 }
+html body .habilidades {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: url("../assets/habilidades.jpg");
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  color: #000;
+}
+html body .habilidades .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+html body .habilidades .contenido-seccion .titulo-seccion {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5rem;
+}
+html body .habilidades .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+html body .habilidades .contenido-seccion .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+html body .habilidades .contenido-seccion .fila .col {
+  width: 47%;
+  text-align: left;
+}
+html body .habilidades .contenido-seccion .fila .col .cont-barra {
+  display: flex;
+  align-items: center;
+}
+html body .habilidades .contenido-seccion .fila .col .cont-barra .barra {
+  display: flex;
+  border: 1px solid #179aac;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+html body .habilidades .contenido-seccion .fila .col .cont-barra .barra .e {
+  background-color: #363636;
+  width: 20px;
+  height: 30px;
+  margin-right: 2px;
+}
+html body .resumen {
+  background-color: #e6e6e6;
+  padding: 140px 0 100px 0;
+  text-align: center;
+}
+html body .resumen .contenido-seccion {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+html body .resumen .contenido-seccion h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+html body .resumen .contenido-seccion .info {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+html body .resumen .contenido-seccion .info .col {
+  width: 45%;
+}
+html body .resumen .contenido-seccion .info .col .titulo {
+  display: inline-block;
+  color: #179aac;
+  font-weight: bold;
+  border: 2px solid #179aac;
+  padding: 10px;
+}
+html body .resumen .contenido-seccion .info .col table {
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+html body .resumen .contenido-seccion .info .col table .datos {
+  width: 40%;
+  border-bottom: 1px solid #bab9b9;
+}
+html body .resumen .contenido-seccion .info .col table .datos h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+html body .resumen .contenido-seccion .info .col table h4 {
+  margin-top: 10px;
+}
+html body .resumen .contenido-seccion .info .col table p {
+  font-size: 16px;
+  font-weight: bold;
+}
+html body .resumen .contenido-seccion .info .col table .description {
+  border-left: 1px solid #bab9b9;
+  padding-left: 20px;
+}
+html body .resumen .contenido-seccion .titulo-seccion {
+  font-family: "Yellowtail", cursive;
+}
 
 /* Media queris */
 @media only screen and (max-width: 1100px) {
