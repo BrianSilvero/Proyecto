@@ -1,26 +1,26 @@
 // Fuentes de internet
-html{
-  font-family: 'Playfair Display', serif;
+html {
+  font-family: "Playfair Display", serif;
   scroll-behavior: smooth;
 
-  body{
-    .inicio{
-      background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+  body {
+    .inicio {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
       background-image: url("../assets/codigos.jpg");
       object-fit: cover;
       background-size: cover;
       background-position: center bottom;
       color: #fff;
 
-      .contenido-seccion{
+      .contenido-seccion {
         max-width: 1000px;
         margin: auto;
         text-align: center;
         padding: 0 10px;
 
-        header{
+        header {
           padding: 30px;
-          nav{
+          nav {
             position: fixed;
             margin-left: 60px;
             background-color: #19d1ff;
@@ -29,8 +29,8 @@ html{
             text-align: left;
             z-index: 99;
             display: none;
-            
-            a{
+
+            a {
               display: block;
               color: #fff;
               text-decoration: none;
@@ -38,18 +38,18 @@ html{
               font-weight: bold;
             }
           }
-          .logo-cv{
+          .logo-cv {
             font-weight: bold;
             font-size: 2.5rem;
-            font-family: 'Yellowtail', cursive;
+            font-family: "Yellowtail", cursive;
             text-shadow: 0 0 35px #fff;
 
-            .color{
+            .color {
               color: #179aac;
-              font-family: 'Yellowtail', cursive;
+              font-family: "Yellowtail", cursive;
             }
           }
-          .nav-bar{
+          .nav-bar {
             position: fixed;
             background-color: #19d1ff;
             font-size: 20px;
@@ -58,29 +58,29 @@ html{
             border-radius: 50%;
             line-height: 50px;
             cursor: pointer;
-            transition: .3s;
-            &:hover{
+            transition: 0.3s;
+            &:hover {
               box-shadow: 0 0 35px #fff;
             }
           }
         }
-        .info{
+        .info {
           padding-bottom: 130px;
-          
-          h1{
+
+          h1 {
             font-size: 3rem;
             letter-spacing: 5px;
           }
-          h2{
+          h2 {
             font-weight: normal;
             font-size: 20px;
             margin-top: -10px;
             letter-spacing: 2px;
           }
-          .redes{
+          .redes {
             margin: 20px 0;
 
-            a{
+            a {
               display: inline-block;
               background-color: #000;
               color: #179aac;
@@ -90,18 +90,18 @@ html{
               height: 40px;
               line-height: 40px;
               margin: 0 5px;
-              transition: .3s;
-              &:hover{
+              transition: 0.3s;
+              &:hover {
                 color: #fff;
-                background-color:#179aac;
+                background-color: #179aac;
                 box-shadow: 0 0 20px #fff;
-              } 
+              }
             }
           }
         }
-        .foto{
+        .foto {
           position: relative;
-          .img__brian_silvero{
+          .img__brian_silvero {
             width: 250px;
             border-radius: 50%;
             border: 3px solid #179aac;
@@ -114,45 +114,44 @@ html{
       }
     }
 
-    // Seccion sobre mi 
-    .sobremi{
+    // Seccion sobre mi
+    .sobremi {
       background-color: #e6e6e6;
       padding: 140px 0 100px 0;
       text-align: center;
 
-      .contenido-seccion{
+      .contenido-seccion {
         max-width: 1000px;
         margin: auto;
         padding: 0 10px;
-        .titulo-seccion{
-          font-family: 'Yellowtail', cursive;
+        .titulo-seccion {
+          font-family: "Yellowtail", cursive;
           font-size: 2.5rem;
-
         }
-        h3{
+        h3 {
           text-transform: uppercase;
           font-size: 30px;
         }
-        .especial{
+        .especial {
           color: #179aac;
           font-weight: bold;
           margin-top: 15px;
         }
-        p{
+        p {
           max-width: 700px;
           margin: auto;
           color: #000;
           font-weight: bold;
         }
-        .fila{
+        .fila {
           display: flex;
           margin-top: 30px;
           justify-content: space-between;
 
-          .col{
+          .col {
             width: 30%;
 
-            i{
+            i {
               color: #179aac;
               display: inline-block;
               width: 40px;
@@ -161,7 +160,7 @@ html{
               line-height: 40px;
               border-radius: 50%;
             }
-            span{
+            span {
               display: block;
               font-weight: bold;
               margin: 8px 0;
@@ -172,10 +171,10 @@ html{
     }
 
     // Seccion habilidades
-    .habilidades{
+    .habilidades {
       padding: 80px 0 100px 0;
       text-align: center;
-      background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
       background-image: url("../assets/habilidades.jpg");
       object-fit: cover;
       background-size: cover;
@@ -183,39 +182,39 @@ html{
       background-position: center bottom;
       color: #000;
 
-      .contenido-seccion{
+      .contenido-seccion {
         max-width: 1000px;
         margin: auto;
         padding: 0 10px;
-        .titulo-seccion{
-          font-family: 'Yellowtail', cursive;
+        .titulo-seccion {
+          font-family: "Yellowtail", cursive;
           font-size: 2.5rem;
         }
-        h3{
+        h3 {
           text-transform: uppercase;
           font-size: 30px;
         }
-        .fila{
+        .fila {
           display: flex;
           justify-content: space-between;
           margin-top: 30px;
 
-          .col{
+          .col {
             width: 47%;
             text-align: left;
 
-            .cont-barra{
+            .cont-barra {
               display: flex;
               align-items: center;
 
-              .barra{
+              .barra {
                 display: flex;
                 border: 1px solid #179aac;
                 padding: 2px;
                 border-radius: 3px;
                 margin-right: 10px;
 
-                .e{
+                .e {
                   background-color: #363636;
                   width: 20px;
                   height: 30px;
@@ -229,69 +228,92 @@ html{
     }
 
     // Seccion resumen
-    .resumen{
+    .resumen {
       background-color: #e6e6e6;
       padding: 140px 0 100px 0;
       text-align: center;
 
-      .contenido-seccion{
+      .contenido-seccion {
         max-width: 1000px;
         margin: auto;
         padding: 0 10px;
-        h3{
+        .titulo-seccion {
+          font-family: "Yellowtail", cursive;
+          font-size: 2.5rem;
+        }
+        h3 {
           text-transform: uppercase;
           font-size: 30px;
         }
-        .info{
+        .info {
           text-align: left;
           display: flex;
           justify-content: space-around;
           margin-top: 30px;
 
-          .col{
+          .col {
             width: 45%;
-             .titulo{
+            .titulo {
               display: inline-block;
               color: #179aac;
               font-weight: bold;
               border: 2px solid #179aac;
-              padding:  10px;
-             }
-             table{
+              padding: 10px;
+            }
+            table {
               margin-top: 30px;
               border-collapse: collapse;
 
-              .datos{
+              .datos {
                 width: 40%;
                 border-bottom: 1px solid #bab9b9;
-                
-                h3{
+
+                h3 {
                   font-size: 20px;
                   margin-bottom: 5px;
                 }
               }
-              h4{
+              h4 {
                 margin-top: 10px;
               }
-              p{
+              p {
                 font-size: 16px;
-                font-weight: bold;           
+                font-weight: bold;
               }
-              .description{
+              .description {
                 border-left: 1px solid #bab9b9;
                 padding-left: 20px;
               }
-
-             }
+            }
           }
-        }
-        .titulo-seccion{
-          font-family: 'Yellowtail', cursive;
-          
         }
       }
     }
 
     // Seccion contacto
+    .contacto {
+      background-color: #202020;
+      padding: 140px 0 100px 0;
+      color: #e6e6e6;
+      text-align: center;
+      .contenido-seccion {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 10px;
+
+        h3{
+          text-transform: uppercase;
+          font-size: 30px;
+        }  
+        .titulo-seccion {
+          font-family: "Yellowtail", cursive;
+        }
+        .fila{
+          display: flex;
+          justify-content: space-around;
+        }
+        
+      }
+    }
   }
 }
