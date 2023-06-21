@@ -1,324 +1,322 @@
 // Fuentes de internet
-html {
+body {
   font-family: "Playfair Display", serif;
   scroll-behavior: smooth;
+  .inicio {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-image: url("../assets/codigos.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center bottom;
+    color: #fff;
 
-  body {
-    .inicio {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-      background-image: url("../assets/codigos.jpg");
-      object-fit: cover;
-      background-size: cover;
-      background-position: center bottom;
-      color: #fff;
+    .contenido-seccion {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+      padding: 0 10px;
 
-      .contenido-seccion {
-        max-width: 1000px;
-        margin: auto;
-        text-align: center;
-        padding: 0 10px;
+      header {
+        padding: 30px;
+        nav {
+          position: fixed;
+          margin-left: 60px;
+          background-color: #19d1ff;
+          padding: 15px;
+          border-radius: 10px;
+          text-align: left;
+          z-index: 99;
+          display: none;
 
-        header {
-          padding: 30px;
-          nav {
-            position: fixed;
-            margin-left: 60px;
-            background-color: #19d1ff;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: left;
-            z-index: 99;
-            display: none;
-
-            a {
-              display: block;
-              color: #fff;
-              text-decoration: none;
-              margin-bottom: 10px;
-              font-weight: bold;
-            }
-          }
-          .logo-cv {
+          a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
             font-weight: bold;
-            font-size: 2.5rem;
-            font-family: "Yellowtail", cursive;
-            text-shadow: 0 0 35px #fff;
-
-            .color {
-              color: #179aac;
-              font-family: "Yellowtail", cursive;
-            }
           }
-          .nav-bar {
-            position: fixed;
-            background-color: #19d1ff;
-            font-size: 20px;
-            width: 50px;
-            height: 50px;
+        }
+        .logo-cv {
+          font-weight: bold;
+          font-size: 2.5rem;
+          font-family: "Yellowtail", cursive;
+          text-shadow: 0 0 35px #fff;
+
+          .color {
+            color: #179aac;
+            font-family: "Yellowtail", cursive;
+          }
+        }
+        .nav-bar {
+          position: fixed;
+          background-color: #19d1ff;
+          font-size: 20px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          line-height: 50px;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            box-shadow: 0 0 35px #fff;
+          }
+        }
+      }
+      .info {
+        padding-bottom: 130px;
+
+        h1 {
+          font-size: 3rem;
+          letter-spacing: 5px;
+        }
+        h2 {
+          font-weight: normal;
+          font-size: 20px;
+          margin-top: -10px;
+          letter-spacing: 2px;
+        }
+        .redes {
+          margin: 20px 0;
+
+          a {
+            display: inline-block;
+            background-color: #000;
+            color: #179aac;
+            border: 1px solid #179aac;
             border-radius: 50%;
-            line-height: 50px;
-            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 5px;
             transition: 0.3s;
             &:hover {
-              box-shadow: 0 0 35px #fff;
+              color: #fff;
+              background-color: #179aac;
+              box-shadow: 0 0 20px #fff;
             }
           }
         }
-        .info {
-          padding-bottom: 130px;
-
-          h1 {
-            font-size: 3rem;
-            letter-spacing: 5px;
-          }
-          h2 {
-            font-weight: normal;
-            font-size: 20px;
-            margin-top: -10px;
-            letter-spacing: 2px;
-          }
-          .redes {
-            margin: 20px 0;
-
-            a {
-              display: inline-block;
-              background-color: #000;
-              color: #179aac;
-              border: 1px solid #179aac;
-              border-radius: 50%;
-              width: 40px;
-              height: 40px;
-              line-height: 40px;
-              margin: 0 5px;
-              transition: 0.3s;
-              &:hover {
-                color: #fff;
-                background-color: #179aac;
-                box-shadow: 0 0 20px #fff;
-              }
-            }
-          }
+      }
+      .foto {
+        position: relative;
+        .img__brian_silvero {
+          width: 250px;
+          border-radius: 50%;
+          border: 3px solid #179aac;
+          position: absolute;
+          left: 50%;
+          top: -100px;
+          transform: translateX(-50%);
         }
-        .foto {
-          position: relative;
-          .img__brian_silvero {
-            width: 250px;
+      }
+    }
+  }
+
+  // Seccion sobre mi
+  .sobremi {
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+
+    .contenido-seccion {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 10px;
+      .titulo-seccion {
+        font-family: "Yellowtail", cursive;
+        font-size: 2.5rem;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+      .especial {
+        color: #179aac;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      p {
+        max-width: 700px;
+        margin: auto;
+        color: #000;
+        font-weight: bold;
+      }
+      .fila {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+
+        .col {
+          width: 30%;
+
+          i {
+            color: #179aac;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #179aac;
+            line-height: 40px;
             border-radius: 50%;
-            border: 3px solid #179aac;
-            position: absolute;
-            left: 50%;
-            top: -100px;
-            transform: translateX(-50%);
           }
-        }
-      }
-    }
-
-    // Seccion sobre mi
-    .sobremi {
-      background-color: #e6e6e6;
-      padding: 140px 0 100px 0;
-      text-align: center;
-
-      .contenido-seccion {
-        max-width: 1000px;
-        margin: auto;
-        padding: 0 10px;
-        .titulo-seccion {
-          font-family: "Yellowtail", cursive;
-          font-size: 2.5rem;
-        }
-        h3 {
-          text-transform: uppercase;
-          font-size: 30px;
-        }
-        .especial {
-          color: #179aac;
-          font-weight: bold;
-          margin-top: 15px;
-        }
-        p {
-          max-width: 700px;
-          margin: auto;
-          color: #000;
-          font-weight: bold;
-        }
-        .fila {
-          display: flex;
-          margin-top: 30px;
-          justify-content: space-between;
-
-          .col {
-            width: 30%;
-
-            i {
-              color: #179aac;
-              display: inline-block;
-              width: 40px;
-              height: 40px;
-              border: 2px solid #179aac;
-              line-height: 40px;
-              border-radius: 50%;
-            }
-            span {
-              display: block;
-              font-weight: bold;
-              margin: 8px 0;
-            }
-          }
-        }
-      }
-    }
-
-    // Seccion habilidades
-    .habilidades {
-      padding: 80px 0 100px 0;
-      text-align: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-      background-image: url("../assets/habilidades.jpg");
-      object-fit: cover;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center bottom;
-      color: #000;
-
-      .contenido-seccion {
-        max-width: 1000px;
-        margin: auto;
-        padding: 0 10px;
-        .titulo-seccion {
-          font-family: "Yellowtail", cursive;
-          font-size: 2.5rem;
-        }
-        h3 {
-          text-transform: uppercase;
-          font-size: 30px;
-        }
-        .fila {
-          display: flex;
-          justify-content: space-around;
-          margin-top: 30px;
-
-          .col {
+          span {
+            display: block;
             font-weight: bold;
-            width: 47%;
-            text-align: left;
-
-            .cont-barra {
-              display: flex;
-              align-items: center;
-
-              .barra {
-                display: flex;
-                border: 1px solid #179aac;
-                padding: 2px;
-                border-radius: 3px;
-                margin-right: 10px;
-
-                .e {
-                  background-color: #363636;
-                  width: 20px;
-                  height: 30px;
-                  margin-right: 2px;
-                }
-              }
-            }
+            margin: 8px 0;
           }
         }
       }
     }
+  }
 
-    // Seccion resumen
-    .resumen {
-      background-color: #e6e6e6;
-      padding: 140px 0 100px 0;
-      text-align: center;
+  // Seccion habilidades
+  .habilidades {
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-image: url("../assets/habilidades.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    color: #000;
 
-      .contenido-seccion {
-        max-width: 1000px;
-        margin: auto;
-        padding: 0 10px;
-        .titulo-seccion {
-          font-family: "Yellowtail", cursive;
-          font-size: 2.5rem;
-        }
-        h3 {
-          text-transform: uppercase;
-          font-size: 30px;
-        }
-        .info {
+    .contenido-seccion {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 10px;
+      .titulo-seccion {
+        font-family: "Yellowtail", cursive;
+        font-size: 2.5rem;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+      .fila {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .col {
+          font-weight: bold;
+          width: 47%;
           text-align: left;
-          display: flex;
-          justify-content: space-around;
-          margin-top: 30px;
 
-          .col {
-            width: 45%;
+          .cont-barra {
+            display: flex;
+            align-items: center;
 
-            .titulo {
-              display: inline-block;
-              color: #179aac;
-              font-weight: bold;
-              border: 2px solid #179aac;
-              padding: 10px;
-            }
-            table {
-              margin-top: 30px;
-              border-collapse: collapse;
+            .barra {
+              display: flex;
+              border: 1px solid #179aac;
+              padding: 2px;
+              border-radius: 3px;
+              margin-right: 10px;
 
-              .datos {
-                width: 40%;
-                border-bottom: 1px solid #bab9b9;
-
-                h3 {
-                  font-size: 20px;
-                  margin-bottom: 5px;
-                }
-              }
-              h4 {
-                margin-top: 10px;
-              }
-              p {
-                font-size: 16px;
-                font-weight: bold;
-              }
-              .description {
-                border-left: 1px solid #bab9b9;
-                padding-left: 20px;
+              .e {
+                background-color: #363636;
+                width: 20px;
+                height: 30px;
+                margin-right: 2px;
               }
             }
           }
         }
       }
     }
+  }
 
-    // Seccion contacto
-    .contacto {
-      background-color: #202020;
-      padding: 140px 0 100px 0;
-      color: #e6e6e6;
-      text-align: center;
-      .contenido-seccion {
-        max-width: 1000px;
-        margin: auto;
+  // Seccion resumen
+  .resumen {
+    background-color: #e6e6e6;
+    padding: 140px 0 100px 0;
+    text-align: center;
+
+    .contenido-seccion {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 10px;
+      .titulo-seccion {
+        font-family: "Yellowtail", cursive;
+        font-size: 2.5rem;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+      .info {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
         padding: 0 10px;
 
-        .titulo-seccion {
-          font-family: "Yellowtail", cursive;
-        }
-        h3 {
-          text-transform: uppercase;
-          font-size: 30px;
-        }
+        .col {
+          width: 45%;
 
-        .fila {
-          display: flex;
-          justify-content: space-around;
+          .titulo {
+            display: inline-block;
+            color: #179aac;
+            font-weight: bold;
+            border: 2px solid #179aac;
+            padding: 10px;
+          }
+          table {
+            margin-top: 30px;
+            border-collapse: collapse;
 
-          .col {
-            h2 {
-              color: #179aac;
+            .datos {
+              width: 40%;
+              border-bottom: 1px solid #bab9b9;
+
+              h3 {
+                font-size: 20px;
+                margin-bottom: 5px;
+              }
             }
+            h4 {
+              margin-top: 10px;
+            }
+            p {
+              font-size: 16px;
+              font-weight: bold;
+            }
+            .description {
+              border-left: 1px solid #bab9b9;
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Seccion contacto
+  .contacto {
+    background-color: #202020;
+    padding: 140px 0 100px 0;
+    color: #e6e6e6;
+    text-align: center;
+    .contenido-seccion {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 10px;
+
+      .titulo-seccion {
+        font-family: "Yellowtail", cursive;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+
+      .fila {
+        display: flex;
+        justify-content: space-around;
+
+        .col {
+          h2 {
+            color: #179aac;
           }
         }
       }

@@ -1284,23 +1284,41 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  .habilidades .contenido-seccion .fila {
+  body .habilidades .contenido-seccion .fila {
     display: block;
   }
-  .habilidades .contenido-seccion .fila .col {
+  body .habilidades .contenido-seccion .fila .col {
     width: 100%;
     text-align: center;
   }
-  .habilidades .contenido-seccion .fila .cont-barra {
+  body .habilidades .contenido-seccion .fila .cont-barra {
     justify-content: center;
   }
-  .sobremi .contenido-seccion .fila {
+  body .sobremi .contenido-seccion .fila {
     display: block;
   }
-  .sobremi .contenido-seccion .fila .col {
+  body .sobremi .contenido-seccion .fila .col {
     width: 80%;
     margin: auto;
     margin-top: 20px;
+  }
+  body .resumen .contenido-seccion .info {
+    display: block;
+  }
+  body .resumen .contenido-seccion .info .col {
+    width: 90%;
+    margin: auto;
+  }
+  body .resumen .contenido-seccion .info .col .titulo {
+    display: block;
+    text-align: center;
+  }
+  body .resumen .contenido-seccion .info .col table {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  body .contacto .contenido-seccion .fila {
+    display: block;
   }
 }
 
