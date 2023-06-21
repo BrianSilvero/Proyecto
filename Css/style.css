@@ -1533,16 +1533,19 @@ html body .contacto .contenido-seccion {
   margin: auto;
   padding: 0 10px;
 }
+html body .contacto .contenido-seccion .titulo-seccion {
+  font-family: "Yellowtail", cursive;
+}
 html body .contacto .contenido-seccion h3 {
   text-transform: uppercase;
   font-size: 30px;
 }
-html body .contacto .contenido-seccion .titulo-seccion {
-  font-family: "Yellowtail", cursive;
-}
 html body .contacto .contenido-seccion .fila {
   display: flex;
   justify-content: space-around;
+}
+html body .contacto .contenido-seccion .fila .col h2 {
+  color: #179aac;
 }
 
 /* Media queris */

@@ -301,18 +301,24 @@ html {
         margin: auto;
         padding: 0 10px;
 
-        h3{
-          text-transform: uppercase;
-          font-size: 30px;
-        }  
         .titulo-seccion {
           font-family: "Yellowtail", cursive;
         }
-        .fila{
+        h3 {
+          text-transform: uppercase;
+          font-size: 30px;
+        }
+
+        .fila {
           display: flex;
           justify-content: space-around;
+
+          .col {
+            h2 {
+              color: #179aac;
+            }
+          }
         }
-        
       }
     }
   }
