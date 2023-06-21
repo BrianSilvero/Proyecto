@@ -196,10 +196,11 @@ html {
         }
         .fila {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           margin-top: 30px;
 
           .col {
+            font-weight: bold;
             width: 47%;
             text-align: left;
 
@@ -248,11 +249,12 @@ html {
         .info {
           text-align: left;
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           margin-top: 30px;
 
           .col {
             width: 45%;
+
             .titulo {
               display: inline-block;
               color: #179aac;

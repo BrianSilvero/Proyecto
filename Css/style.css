@@ -1441,10 +1441,11 @@ html body .habilidades .contenido-seccion h3 {
 }
 html body .habilidades .contenido-seccion .fila {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
 }
 html body .habilidades .contenido-seccion .fila .col {
+  font-weight: bold;
   width: 47%;
   text-align: left;
 }
@@ -1486,7 +1487,7 @@ html body .resumen .contenido-seccion h3 {
 html body .resumen .contenido-seccion .info {
   text-align: left;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 30px;
 }
 html body .resumen .contenido-seccion .info .col {
