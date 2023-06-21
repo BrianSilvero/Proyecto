@@ -1487,7 +1487,7 @@ html body .resumen .contenido-seccion h3 {
 html body .resumen .contenido-seccion .info {
   text-align: left;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
 }
 html body .resumen .contenido-seccion .info .col {
@@ -2831,6 +2831,26 @@ html body .contacto .contenido-seccion .fila .col h2 {
   .main__index .grid__cards .area5 .empanadas_link .grid__cards__empanadas {
     width: 270px;
     height: 229px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .habilidades .contenido-seccion .fila {
+    display: block;
+  }
+  .habilidades .contenido-seccion .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+  .habilidades .contenido-seccion .fila .cont-barra {
+    justify-content: center;
+  }
+  .sobremi .contenido-seccion .fila {
+    display: block;
+  }
+  .sobremi .contenido-seccion .fila .col {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
   }
 }
 

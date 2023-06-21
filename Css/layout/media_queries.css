@@ -1283,5 +1283,25 @@
     height: 229px;
   }
 }
+@media only screen and (max-width: 800px) {
+  .habilidades .contenido-seccion .fila {
+    display: block;
+  }
+  .habilidades .contenido-seccion .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+  .habilidades .contenido-seccion .fila .cont-barra {
+    justify-content: center;
+  }
+  .sobremi .contenido-seccion .fila {
+    display: block;
+  }
+  .sobremi .contenido-seccion .fila .col {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
 
 /*# sourceMappingURL=media_queries.css.map */
