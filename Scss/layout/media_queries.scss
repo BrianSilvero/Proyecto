@@ -688,6 +688,16 @@
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 1032px){
+  .navbar-nav li a{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .navbar-nav li a {
+    font-size: 18px;
+}
+}
 
 @media only screen and (max-width: 974px) {
   .navbar-nav li a {
@@ -841,6 +851,12 @@
   .parrafo_card {
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 891px) {
+  .navbar-nav li a {
+    font-size: 16px;
+}
 }
 
 @media only screen and (max-width: 885px) {
@@ -1537,6 +1553,8 @@
     padding: 6.5px;
   }
 }
+
+
 
 @media only screen and (max-width: 768px) {
   .offcanvas,

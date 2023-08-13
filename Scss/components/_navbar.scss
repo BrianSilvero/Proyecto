@@ -60,4 +60,17 @@
     calc(var(--bs-offcanvas-padding-x) * 1.5);
 }
 
+.navbar-nav{
+  --bs-nav-link-padding-x: none;
+}
+.btn-primary{
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #ff7e00;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: #ffcd00;
+  --bs-btn-hover-color: #000000;
+}
 
+.btn{
+  --bs-btn-font-weight: bold;
+}
