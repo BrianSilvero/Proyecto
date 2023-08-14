@@ -14,11 +14,27 @@ class Carrito {
     this.listaCarrito = [];
   }
 
+  levantarStorage(){
+    let listaCarritoJSON = localStorage.getItem("listaCarrito")
+    this.listaCarrito = JSON.parse(listaCarritoJSON) || [];
+  }
+  guardarEnStorage(){
+    let listaCarritoJSON = JSON.stringify(this.listaCarrito)
+    localStorage.setItem("listaCarrito", listaCarritoJSON)
+  }
+
   agregar(producto){
     this.listaCarrito.push(producto)
   }
+  
+  eliminar(productoEliminar){
+    let producto = this.listaCarrito.find(producto => producto.id == productoEliminar.id)
+    let indice = this.listaCarrito.indexOf(producto)
+    this.listaCarrito.splice(indice, 1)
+    this.guardarEnStorage()
+  }
 
-  mostrar(){
+  mostrarProductos(){
     let contenedor_carrito = document.getElementById('contenedor_carrito')
     contenedor_carrito.innerHTML = ""
     this.listaCarrito.forEach(producto => {
@@ -32,10 +48,19 @@ class Carrito {
                     <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">Precio: $${producto.precio}</p>
+                        <button class="btn btn-danger" id= "eliminar-${producto.id}"><i class="fa-solid fa-trash"></i></button>
                     </div>
                 </div>
             </div>
         </div>`
+    })
+    this.listaCarrito.forEach(producto => {
+      let btn_eliminar = document.getElementById(`eliminar-${producto.id}`)
+      btn_eliminar.addEventListener("click", () => {
+          this.eliminar(producto)
+          this.guardarEnStorage()
+          this.mostrarProductos()
+      })
     })
   }
 }
@@ -67,7 +92,8 @@ class controladorDeProducto{
             const btn = document.getElementById(`ap-${producto.id}`)
             btn.addEventListener("click",() =>{
                 carrito.agregar(producto)
-                carrito.mostrar()
+                carrito.guardarEnStorage()
+                carrito.mostrarProductos()
             })
         })
     }
@@ -83,6 +109,8 @@ const Botella = new Producto (4, "Botella", 2000, "Diseñada para quienes buscan
 // Carrito del sitio
 
 const carrito = new Carrito()
+carrito.levantarStorage()
+carrito.mostrarProductos()
 
 // Controlador de producto
 
