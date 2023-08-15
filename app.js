@@ -1,11 +1,43 @@
 // // Creando tienda de Hunger
 class Producto {
-  constructor(id, nombre, precio, descripcion, img) {
+  constructor({id, nombre, precio, descripcion, img}){
     this.id = id;
     this.nombre = nombre;
     this.precio = precio;
+    this.cantidad = 1
     this.descripcion = descripcion;
     this.img = img;
+  }
+
+
+  descripcionHtmlCarrito(){
+    return `
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="${this.img}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">${this.nombre}</h5>
+                    <p class="card-text">Cantidad: ${this.cantidad} <button class="btn btn-primary"><i class="fa-solid fa-minus"></i></button><button class="btn btn-secondary"><i class="fa-solid fa-plus"></i></button></p> 
+                    <p class="card-text">Precio: $${this.precio}</p>
+                    <button class="btn btn-danger" id= "eliminar-${this.id}"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>`
+  }
+  descripcionHtml(){
+    return `<div class="card" style="width: 18rem">
+    <img src="${this.img}" alt="img" />
+    <div class="card-body">
+        <h5 class="card-title">${this.nombre}</h5>
+        <p class="card-text">${this.descripcion}</p>
+        <p class="card-text">$${this.precio}</p>
+        <a href="#" class="btn btn-primary" id="ap-${this.id}">Añadir al carrito</a>
+    </div>
+  </div>`
   }
 }
 
@@ -15,16 +47,35 @@ class Carrito {
   }
 
   levantarStorage(){
-    let listaCarritoJSON = localStorage.getItem("listaCarrito")
-    this.listaCarrito = JSON.parse(listaCarritoJSON) || [];
+    this.listaCarrito = JSON.parse(localStorage.getItem("listaCarrito")) || []
+    
+    if(this.listaCarrito.length > 0 ){
+      let listaAuxiliar = []
+
+      for(let i = 0; i < this.listaCarrito.length; i++){
+        let productoDeLaClaseProducto = new Producto (this.listaCarrito[i])
+        listaAuxiliar.push(productoDeLaClaseProducto)
+      }
+
+      this.listaCarrito = listaAuxiliar
+    }
   }
   guardarEnStorage(){
     let listaCarritoJSON = JSON.stringify(this.listaCarrito)
     localStorage.setItem("listaCarrito", listaCarritoJSON)
   }
 
-  agregar(producto){
-    this.listaCarrito.push(producto)
+  agregar(productoAgregar){
+    let existenciaDeProducto = this.listaCarrito.some( producto => producto.id == productoAgregar.id)
+
+    if(existenciaDeProducto){
+      let producto = this.listaCarrito.find(producto => producto.id == productoAgregar.id)
+      producto.cantidad = producto.cantidad + 1  
+    }
+    else{
+      this.listaCarrito.push(productoAgregar)
+    }
+
   }
   
   eliminar(productoEliminar){
@@ -38,22 +89,14 @@ class Carrito {
     let contenedor_carrito = document.getElementById('contenedor_carrito')
     contenedor_carrito.innerHTML = ""
     this.listaCarrito.forEach(producto => {
-        contenedor_carrito.innerHTML += `
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="${producto.img}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">${producto.nombre}</h5>
-                        <p class="card-text">Precio: $${producto.precio}</p>
-                        <button class="btn btn-danger" id= "eliminar-${producto.id}"><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>`
+        contenedor_carrito.innerHTML += producto.descripcionHtmlCarrito()
     })
+
+    this.darEventoAlBtn()
+    
+  }
+
+  darEventoAlBtn(){
     this.listaCarrito.forEach(producto => {
       let btn_eliminar = document.getElementById(`eliminar-${producto.id}`)
       btn_eliminar.addEventListener("click", () => {
@@ -77,15 +120,7 @@ class controladorDeProducto{
     mostrarProductos(){
         let contenedor_productos = document.getElementById("contenedor_productos")
         this.listaDeProductos.forEach( producto => {
-            contenedor_productos.innerHTML += `<div class="card" style="width: 18rem">
-            <img src="${producto.img}" alt="img" />
-            <div class="card-body">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text">${producto.descripcion}</p>
-                <p class="card-text">$${producto.precio}</p>
-                <a href="#" class="btn btn-primary" id="ap-${producto.id}">Añadir al carrito</a>
-            </div>
-          </div>`
+            contenedor_productos.innerHTML += producto.descripcionHtml()
         })
 
         this.listaDeProductos.forEach( producto => {
@@ -100,10 +135,12 @@ class controladorDeProducto{
 }
 
 // Productos del sitio
-const Agenda = new Producto (1, "Agenda", 2300, "Diseñada para satisfacer tus necesidades en un mundo lleno de actividades, la Agenda Hunger combina estilo y funcionalidad en un elegante formato. Con páginas de alta calidad, secciones personalizables y un diseño intuitivo, esta agenda te ayudará a conquistar tus metas día tras día. ¡Eleva tu productividad y estilo con la Agenda Hunger", "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/agenda.png")
-const Remera = new Producto (2, "Remera", 3800, "Fabricada con materiales de primera calidad, esta remera es el equilibrio perfecto entre estilo y confort. Ya sea para el día a día o para destacar en tus actividades, la Remera Hunger te acompaña con su diseño moderno y ajuste impecable. ¡Eleva tu estilo con la autenticidad de Hunger!", "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/remera.png")
-const Taza = new Producto (3, "Taza", 1500, "Creada con pasión y calidad premium, esta taza es mucho más que un recipiente, es un compañero de emociones. Cada café, té o chocolate caliente se transforma en un ritual con su diseño cautivador y el confort de sostenerla en tus manos. ¡Eleva tus mañanas y despierta tus sentidos con la Taza Hunger, la chispa que transforma tus bebidas en momentos inolvidables!", "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/taza.png")
-const Botella = new Producto (4, "Botella", 2000, "Diseñada para quienes buscan explorar el mundo, esta botella es resistente, funcional y llena de estilo. Mantén tus bebidas frías o calientes durante horas, mientras te desplazas con confianza gracias a su construcción de alta calidad. Siente la sed de la aventura y mantente hidratado con la Botella Hunger, tu compañera perfecta en cada camino que decidas recorrer.", "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/botella.png")
+
+const Agenda = new Producto ({id:1, nombre:"Agenda", precio: 2300, descripcion: "Diseñada para satisfacer tus necesidades en un mundo lleno de actividades, la Agenda Hunger combina estilo y funcionalidad en un elegante formato. Con páginas de alta calidad, secciones personalizables y un diseño intuitivo, esta agenda te ayudará a conquistar tus metas día tras día. ¡Eleva tu productividad y estilo con la Agenda Hunger", img: "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/agenda.png"})
+const Remera = new Producto ({id:2, nombre:"Remera", precio: 3800, descripcion: "Fabricada con materiales de primera calidad, esta remera es el equilibrio perfecto entre estilo y confort. Ya sea para el día a día o para destacar en tus actividades, la Remera Hunger te acompaña con su diseño moderno y ajuste impecable. ¡Eleva tu estilo con la autenticidad de Hunger!", img: "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/remera.png"})
+const Taza = new Producto ({id:3, nombre:"Taza", precio: 1500, descripcion: "Creada con pasión y calidad premium, esta taza es mucho más que un recipiente, es un compañero de emociones. Cada café, té o chocolate caliente se transforma en un ritual con su diseño cautivador y el confort de sostenerla en tus manos. ¡Eleva tus mañanas y despierta tus sentidos con la Taza Hunger, la chispa que transforma tus bebidas en momentos inolvidables!", img: "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/taza.png"})
+const Botella = new Producto ({id:4, nombre:"Botella", precio: 1500, descripcion: "Diseñada para quienes buscan explorar el mundo, esta botella es resistente, funcional y llena de estilo. Mantén tus bebidas frías o calientes durante horas, mientras te desplazas con confianza gracias a su construcción de alta calidad. Siente la sed de la aventura y mantente hidratado con la Botella Hunger, tu compañera perfecta en cada camino que decidas recorrer.", img: "https://raw.githubusercontent.com/BrianSilvero/Proyecto/main/assets/botella.png"})
+
 
 
 // Carrito del sitio
