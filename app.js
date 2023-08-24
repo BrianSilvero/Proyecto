@@ -134,6 +134,15 @@ class Carrito {
   calcular_total(){
     return this.listaCarrito.reduce((acumular, producto) => acumular + producto.precio * producto.cantidad, 0)
   }
+
+  eventoFinalizarCompra(){
+    const finalizar_compra = document.getElementById("finalizar_compra")
+    finalizar_compra.addEventListener("click", () => {
+      this.listaCarrito = []
+      localStorage.removeItem("listaCarrito")
+      this.mostrarProductos()
+    })
+  }
 }
 
 class controladorDeProducto{
@@ -176,17 +185,18 @@ const Botella = new Producto ({id:4, nombre:"Botella", precio: 2000, descripcion
 const carrito = new Carrito()
 carrito.levantarStorage()
 carrito.mostrarProductos()
+carrito.eventoFinalizarCompra()
 
 // Controlador de producto
 
-const Controlador = new controladorDeProducto ()
+const Controlador = new controladorDeProducto ();
 
-Controlador.agregar(Agenda)
-Controlador.agregar(Remera)
-Controlador.agregar(Taza)
-Controlador.agregar(Botella)
+Controlador.agregar(Agenda);
+Controlador.agregar(Remera);
+Controlador.agregar(Taza);
+Controlador.agregar(Botella);
 
-Controlador.mostrarProductos()
+Controlador.mostrarProductos();
 
 // class Producto{
 //     constructor(id, nombre, precio, cantidad){
@@ -295,3 +305,4 @@ Controlador.mostrarProductos()
 // else{
 // alert("Lo sentimos no tienes la edad para comprar");
 // }
+
