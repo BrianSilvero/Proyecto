@@ -1466,6 +1466,10 @@ body .habilidades .contenido-seccion .fila .col {
   width: 47%;
   text-align: left;
 }
+body .habilidades .contenido-seccion .fila .col .span__second {
+  color: white;
+  font-size: 100px;
+}
 body .habilidades .contenido-seccion .fila .col .cont-barra {
   display: flex;
   align-items: center;
